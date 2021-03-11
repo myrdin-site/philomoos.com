@@ -1,15 +1,17 @@
-# Site internet Philomoos
-
+# Site internet Philomoos.com
 Website for Philomoos workshops.
 
-## Inclus
+## Include
 - PostCSS
 - autoprefixer
 - tailwindcss
+
+## Install dependancies
+Run `npm install` in project directory to install the needed dependancies.
 
 ## Compile CSS
 Run `npm run build` to compile CSS.
 
 ## Optimizing before production
-Change `purge` at `true` in `tailwind.config.js` and run `npm run build` to purge unused CSS classes from
+Change `purge` value to `true` in `tailwind.config.js` and run `npm run build` to purge unused CSS classes from
 production CSS file.
