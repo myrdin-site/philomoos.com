@@ -1,0 +1,17 @@
+{
+  "name": "Philomoos",
+  "version": "1.0.0",
+  "description": "Philomoos landing page",
+  "main": "index.html",
+  "scripts": {
+    "build": "postcss src/assets/css/tailwind.css -o dist/assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "Clic2000",
+  "license": "CNPLv5",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  }
+}
