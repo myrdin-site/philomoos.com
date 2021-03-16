@@ -162,6 +162,13 @@ body {
 
 /* Active menu */
 
-.active {
+.drop {
+    max-height: 0;
     display: block;
+    overflow: hidden;
+    -moz-transition: max-height 1s;
+}
+
+.active {
+    max-height: 550px;
 }
