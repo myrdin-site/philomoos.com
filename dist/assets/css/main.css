@@ -192,4 +192,18 @@ body {
 
 .hr-accueil {
     width: 2.4em;
+    border: 1px solid #B1B1B1;
+}
+
+.text-accueil {
+    font-size: 0.6em;
+}
+
+.contact-link {
+    color: #E5AD34;
+}
+
+.vl {
+    border-left: #B5B5B5 1px solid;
+    height: 3em;
 }
