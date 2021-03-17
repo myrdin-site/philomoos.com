@@ -246,3 +246,7 @@ p {
   border: 1px solid #b5b5b5;
 }
 
+.prev, .next {
+    color: #B5B5B5;
+}
+
