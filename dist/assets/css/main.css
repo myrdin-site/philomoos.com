@@ -130,6 +130,10 @@ body {
     font-family: Montserrat 500;
 }
 
+p {
+    color: #838383;
+}
+
 /* Colors items menu */
 
 .color-accueil {
@@ -190,7 +194,7 @@ body {
     font-size: 0.73em;
 }
 
-.hr-accueil {
+.hr-style {
     width: 2.4em;
     border: 1px solid #B1B1B1;
 }
@@ -217,3 +221,6 @@ body {
     height: 300px;
     background-size: cover;
 }
+
+/*Second section (About)*/
+
