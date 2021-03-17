@@ -224,3 +224,25 @@ p {
 
 /*Second section (About)*/
 
+/*Carrousel*/
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 3px;
+  background-color: #b5b5b5;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+  margin: 2px;
+  height: 8px;
+  width: 8px;
+  border: 1px solid #b5b5b5;
+}
+
