@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="flex-row fixed bg-white">
+    <nav class="flex-row fixed bg-white z-50">
 	<!--Logo-->
 	<div class="flex my-8 mx-2 justify-evenly items-center">
 	    <div class="w-3/5">
@@ -32,10 +32,10 @@
 
 	<!--Nav items-->
 	<div class="pl-12">
-	    <ul class="space-y-12 drop z-50" id="menu-mobile">
+	    <ul class="space-y-12 drop" id="menu-mobile">
 		<li><a href="#accueil" class="color-accueil tracking-widest">ACCUEIL</a></li>
 		<li><a href="#équipe" class="color-equipe tracking-widest">L'ÉQUIPE</a></li>
-		<li><a href="#ateliers" class="color-ateliers tracking-widest"->LES ATELIERS</a></li>
+		<li><a href="#ateliers" class="color-ateliers tracking-widest">LES ATELIERS</a></li>
 		<li><a href="#livre" class="color-livre tracking-widest">LE LIVRE</a></li>
 		<li><a href="#podcast" class="color-podcast tracking-widest">PODCAST</a></li>
 		<li><a href="#presse" class="color-presse tracking-widest">PRESSE</a></li>
@@ -108,8 +108,8 @@
 	      </div>
 
 	      <!-- Next and previous buttons -->
-	      <a class="prev cursor-pointer absolute top-2/4" onclick="plusSlides(-1)">&#10094;</a>
-	      <a class="next cursor-pointer absolute top-2/4 right-0" onclick="plusSlides(1)">&#10095;</a>
+	      <a class="prev cursor-pointer absolute top-2/4 ml-1" onclick="plusSlides(-1)">&#10094;</a>
+	      <a class="next cursor-pointer absolute top-2/4 right-0 mr-1" onclick="plusSlides(1)">&#10095;</a>
 	</div>
 	<div class="flex justify-center items-center my-3">
 	  <span class="dot" onclick="currentSlide(1)"></span>
