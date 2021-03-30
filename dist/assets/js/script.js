@@ -8,7 +8,7 @@ hamburger.addEventListener('click', function(){
     });
 
 // Slideshow
-
+var timer = null;
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -16,15 +16,6 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
-function hello(){
-    console.log("Hello");
-};
-
-document.querySelector("#prev").addEventListener('click', plusSlides(1));
-
-var next = document.getElementById("next");
-next.addEventListener("click", plusSlides(1));
 
 // Thumbnail image controls
 function currentSlide(n) {
@@ -35,6 +26,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("my-slides");
   var dots = document.getElementsByClassName("dot");
+  if (n==undefined) {n = ++slideIndex}
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -45,6 +37,8 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " activeSlide";
+
+  timer = setTimeout(showSlides, 4000);
 }
 
 
