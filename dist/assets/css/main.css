@@ -277,3 +277,13 @@ p {
     background-image: url("../img/elements/trame01-min.jpg");
     height: 450px;
 }
+
+/* Section ateliers */
+
+#ateliers {
+    background-color: #f4f4f4;
+}
+
+.gray-ateliers {
+    color: #858585;
+}
