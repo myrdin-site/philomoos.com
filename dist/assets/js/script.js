@@ -38,7 +38,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " activeSlide";
 
-  timer = setTimeout(showSlides, 5000);
+  timer = setTimeout(showSlides, 6000);
 }
 
 
