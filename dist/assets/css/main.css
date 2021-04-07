@@ -418,3 +418,7 @@ p {
 .hr-long {
     border: 1px solid #B1B1B1;
 }
+
+footer {
+    background-color: #41413f;
+    color: #919191;
