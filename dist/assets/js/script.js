@@ -2,10 +2,19 @@
 
 let hamburger = document.querySelector("#hamburger");
 let mobileMenu = document.querySelector("#menu-mobile");
+let links = document.getElementsByClassName("link");
 
 hamburger.addEventListener('click', function(){
     mobileMenu.classList.toggle('active');
     });
+
+for (var j = 0; j < links.length; j++) {
+links[j].addEventListener('click', function(){
+    console.log(links[j]);
+    mobileMenu.classList.toggle('active');
+    });
+};
+
 
 // Slideshow
 var timer = null;
