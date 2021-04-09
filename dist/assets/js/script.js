@@ -4,6 +4,7 @@ let hamburger = document.querySelector("#hamburger");
 let mobileMenu = document.querySelector("#menu-mobile");
 let links = document.getElementsByClassName("link");
 
+// Toggle menu
 hamburger.addEventListener('click', function(){
     mobileMenu.classList.toggle('active');
     });
@@ -15,8 +16,15 @@ links[j].addEventListener('click', function(){
     });
 };
 
+//Space for anchor links
+function addMargin() {
+    window.scrollTo(0, window.pageYOffset - 100);
+}
+
+window.addEventListener('hashchange', addMargin);
 
 // Slideshow
+
 var timer = null;
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -49,5 +57,4 @@ function showSlides(n) {
 
   timer = setTimeout(showSlides, 6000);
 }
-
 
