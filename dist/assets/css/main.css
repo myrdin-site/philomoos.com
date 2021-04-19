@@ -255,7 +255,7 @@
     font-family: "Montserrat";
 }
 
-p,a {
+p,a,figcaption {
     color: #838383;
 }
 
@@ -416,3 +416,12 @@ p,a {
 footer {
     background-color: #41413f;
     color: #919191;
+}
+
+/* PODCASTS */
+
+.bg-trame-podcast {
+    background-image: url("../img/elements/trame-01.jpg");
+    height: 490px;
+}
+
