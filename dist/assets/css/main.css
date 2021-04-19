@@ -312,15 +312,9 @@ p,a {
     background-color: #fbfbfb;
 }
 
-.title {
-    letter-spacing: 0.22em;
-    color: #424240;
-}
-
 .slogan {
     color: #393937;
     letter-spacing: 0.15em;
-    font-size: 0.73em;
 }
 
 .hr-style {
