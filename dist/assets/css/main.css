@@ -289,9 +289,10 @@ p,a,figcaption,h3 {
     color: #082A95;
 }
 
-.color-contact {
+.color-contact, .color-actu {
     color: #484846;
 }
+
 
 /* Active menu */
 
