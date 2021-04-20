@@ -48,23 +48,34 @@
 
     <!--First section-->
     <section id="accueil">
-	<div class="bg-boat-lg">
-	    <div class="cont-accueil flex flex-col justify-center pt-28 mb-12 text-center">
-		<h1 class="slogan -mt-1 text-xl">CRÉER <br> ET RÊVER LE MONDE DE DEMAIN</h1>
+	<div class="bg-boat-lg" title="Bâteau en origami coloré">
+	    <div class="cont-accueil flex flex-col justify-center lg:justify-start pt-28 mb-12 text-center
+	    lg:absolute lg:top-36 lg:left-16">
+		<h1 class="slogan -mt-1 text-xl lg:text-2xl">CRÉER <br class="lg:hidden"> ET RÊVER LE MONDE DE DEMAIN</h1>
 		<hr class="hr-style mx-auto my-6">
-		<p class="text-accueil tracking-wider">
-		    LES ATELIERS DE PHILOSOPHIE ET DE CRÉATION PHILOMOOS<br>
-		    ONT POUR VOCATION D'ÉVEILLER LES ENFANTS ET LES<br>
-		    ADOLESCENTS À LA PENSÉE CRITIQUE ET AU POUVOIR<br>
+		<p class="text-xs tracking-wider px-5 lg:text-sm lg:font-semibold">
+		    LES ATELIERS DE PHILOSOPHIE ET DE CRÉATION PHILOMOOS<br class="hidden lg:block">
+		    ONT POUR VOCATION D'ÉVEILLER LES ENFANTS ET LES<br class="hidden lg:block">
+		    ADOLESCENTS À LA PENSÉE CRITIQUE ET AU POUVOIR<br class="hidden lg:block">
 		    TRANSFORMATEUR DE L'ART.
 		</p>
-		<a href="#contact" class="contact-link text-xs tracking-wider pt-1 pb-6">[ NOUS CONTACTER ]</a>
-		<div class="vl h-12 mx-auto"></div>
-		<div class="socials pt-6">
+		<a href="#contact" class="contact-link text-xs lg:text-base tracking-wider pt-3 pb-6 lg:pb-12">[ NOUS CONTACTER ]</a>
+		<div class="vl h-12 lg:h-28 mx-auto"></div>
+		<div class="socials pt-6 lg:hidden">
 		    <a title="Lien vers facebook de Philomoos" href="https://fr-fr.facebook.com/philomoos/"><i class="fa fa-facebook mx-1"></i></a>
 		    <a title="Lien vers instagram de Philomoos" href="https://www.instagram.com/philomoos/"><i class="fa fa-instagram mx-1"></i></a>
 		    <a title="Lien vers pinterest de Philomoos" href=""><i class="fa fa-pinterest-p mx-1"></i></a>
 		</div>
+		<!-- Socials Desktop -->
+		<div class="socials pt-6 hidden lg:block lg:pt-12">
+		    <a title="Lien vers facebook de Philomoos" href="https://fr-fr.facebook.com/philomoos/"><i
+		    class="fa fa-facebook mx-2 fa-2x"></i></a>
+		    <a title="Lien vers instagram de Philomoos" href="https://www.instagram.com/philomoos/"><i
+		    class="fa fa-instagram mx-2 fa-2x"></i></a>
+		    <a title="Lien vers pinterest de Philomoos" href=""><i class="fa fa-pinterest-p mx-2
+		    fa-2x"></i></a>
+		</div>
+
 		<div class="bg-boat lg:hidden" title="Bâteau en origami coloré avec des projections de peinture en arrière
 		plan"></div>	    
 	    </div>
