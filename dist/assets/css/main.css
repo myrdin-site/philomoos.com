@@ -343,6 +343,18 @@ p,a,figcaption,h3 {
     background-size: cover;
 }
 
+@media (min-width: 1024px) {
+ .cont-accueil {
+     background-color: transparent;
+}
+
+ .bg-boat-lg {
+     background: url("../img/elements/bateau-philomoos-lg.jpg") no-repeat center;
+     background-size: cover;
+     height: 900px;
+ }
+}
+
 /* Second section (About) */
 
 /* Carrousel */
