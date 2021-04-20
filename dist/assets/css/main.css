@@ -297,9 +297,6 @@ p,a,figcaption,h3 {
 /* Active menu */
 
 .drop {
-    max-height: 0;
-    display: block;
-    overflow: hidden;
     transition: max-height 1s;
 }
 
