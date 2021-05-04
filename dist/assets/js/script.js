@@ -31,11 +31,13 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+  clearTimeout(timer);
   showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
+  clearTimeout(timer);
   showSlides(slideIndex = n);
 }
 
@@ -54,7 +56,8 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " activeSlide";
-
+  
   timer = setTimeout(showSlides, 5000);
+
 }
 
