@@ -404,6 +404,12 @@ p,a,figcaption,h3 {
     height: 450px;
 }
 
+@media (min-width: 1024px) {
+    .bg-trame {
+	height: 100vh;
+    }
+}
+
 /* Section ateliers */
 
 .gray-philo {
