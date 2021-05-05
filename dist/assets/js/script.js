@@ -24,7 +24,6 @@ function addMargin() {
 window.addEventListener('hashchange', addMargin);
 
 // Slideshow
-
 var timer = null;
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -41,6 +40,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//Slideshow logic
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("my-slides");
