@@ -346,7 +346,7 @@ p,a,figcaption,h3 {
  .bg-boat-lg {
      background: url("../img/elements/bateau-philomoos-lg.jpg") no-repeat center;
      background-size: contain;
-     height: 900px;
+     height: 880px;
      margin-top: -50px;
  }
 }
@@ -413,7 +413,7 @@ p,a,figcaption,h3 {
 
 @media (min-width: 1024px) {
     .bg-trame {
-	height: 100vh;
+	height: 850px;
     }
 }
 
