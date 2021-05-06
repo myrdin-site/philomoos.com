@@ -442,4 +442,10 @@ footer {
     background-image: url("../img/elements/trame-01.jpg");
     height: 490px;
 }
+@media (min-width: 1024px) {
+    .bg-trame-podcast {
+	height: 850px;
+    }
+}
+
 
