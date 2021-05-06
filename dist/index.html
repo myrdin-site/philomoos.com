@@ -1754,12 +1754,12 @@
     </section>
     <!-- Actu -->
     <section id="actu">
-      <div class="flex flex-wrap justify-center py-6">
+      <div class="flex flex-wrap justify-center py-6 lg:flex-nowrap lg:flex-col lg:mx-auto lg:w-1/3">
         <div>
-          <h2 class="font-thin text-center tracking-widest mt-6">ACTUALITÉ</h2>
+          <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">ACTUALITÉ</h2>
           <hr class="hr-style mx-auto my-3 w-16" />
         </div>
-        <div class="px-5 pb-6">
+        <div class="px-5 lg:py-12">
           <h3 class="text-sm">
             Le 12 Juin 2021 venez assister à un colloque à la Bibliothèque
             Nationale de France à Paris ! Fanny Bourrillon y présentera les
@@ -1772,39 +1772,47 @@
             l’émancipation</a
           >
         </div>
-        <div class="vl h-12 text-center"></div>
-        <div class="px-5 py-6">
+        <div class="vl h-12 mx-auto lg:h-20"></div>
+        <div class="px-5 py-6 lg:py-12">
           <h3 class="text-sm">
             Les étudiant.es en DNMADE (diplôme des métiers d’art et du design)
             de l’école des Gobelins à Paris participent à l’encadrement des
             ateliers philomoos ! Dans le cadre d’un projet d’étude de première
             année, ils travaillent sur la chaîne Philomoos.TV :
           </h3>
-          <div class="py-6">
-            <img
-              src="assets/img/elements/tv/camille-nour.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Camille & Nour</p>
-            <img
-              src="assets/img/elements/tv/clara-sophie.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Clara & Sophie</p>
-            <img
-              src="assets/img/elements/tv/mateo-amina.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Matéo & Amina</p>
-            <img
-              src="assets/img/elements/tv/zoe-nathan.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Zoé & Nathan</p>
+          <div class="py-6 lg:flex lg:justify-center">
+	    <div class="lg:w-1/2">
+		<img
+		  src="assets/img/elements/tv/camille-nour.png"
+		  alt="logo typographique"
+		  class="lg:h-32 lg:w-auto lg:mx-auto lg:object-contain"
+		/>
+		<p class="text-sm pb-6 pt-3 text-center">Camille & Nour</p>
+		<img
+		  src="assets/img/elements/tv/clara-sophie.png"
+		  alt="logo typographique"
+		  class="lg:h-32 lg:w-auto lg:mx-auto"
+		/>
+		<p class="text-sm pb-6 pt-3 text-center">Clara & Sophie</p>
+	    </div>
+	    <div class="lg:w-1/2">
+		<img
+		  src="assets/img/elements/tv/mateo-amina.png"
+		  alt="logo typographique"
+		  class="lg:h-32 lg:w-auto lg:mx-auto"
+		/>
+		<p class="text-sm pb-6 pt-3 text-center">Matéo & Amina</p>
+		<img
+		  src="assets/img/elements/tv/zoe-nathan.png"
+		  alt="logo typographique"
+		  class="lg:h-32 lg:w-auto lg:mx-auto"
+		/>
+		<p class="text-sm pb-6 pt-3 text-center">Zoé & Nathan</p>
+	    </div>
           </div>
         </div>
-        <div class="vl h-12 text-center"></div>
-        <div class="px-5 py-6">
+        <div class="vl h-12 mx-auto lg:h-20"></div>
+        <div class="px-5 py-6 lg:py-12">
           <h3 class="text-sm">
             Les ateliers se poursuivent pendant la crise sanitaire ! Nous
             intervenons dans les écoles, et depuis cette année, les ateliers bpi
@@ -1815,6 +1823,7 @@
           <img
             src="assets/img/elements/actu/actu-masques.jpg"
             alt="photo de groupe d'une classe masquée"
+	    class="lg:mx-auto lg:px-5"
           />
         </div>
       </div>
