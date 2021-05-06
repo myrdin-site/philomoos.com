@@ -348,8 +348,13 @@ p,a,figcaption,h3 {
      background-size: contain;
      height: 900px;
      margin-top: -50px;
-     margin-left: 100px;
  }
+}
+
+@media (min-width: 1536px) {
+    .bg-boat-lg {
+	background-size: cover;
+    }
 }
 
 /* Second section (About) */
