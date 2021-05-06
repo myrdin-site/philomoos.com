@@ -345,8 +345,10 @@ p,a,figcaption,h3 {
 
  .bg-boat-lg {
      background: url("../img/elements/bateau-philomoos-lg.jpg") no-repeat center;
-     background-size: cover;
+     background-size: contain;
      height: 900px;
+     margin-top: -50px;
+     margin-left: 100px;
  }
 }
 
