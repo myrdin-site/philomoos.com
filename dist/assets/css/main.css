@@ -273,8 +273,8 @@
     font-family: "Montserrat";
 }
 
-p,a,figcaption,h3 {
-    color: #838383;
+p,a,figcaption,h2,h3,h4 {
+    color: #595959;
 }
 
 .subtitles {
