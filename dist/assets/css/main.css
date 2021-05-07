@@ -300,7 +300,8 @@ p,a,figcaption,h2,h3,h4 {
 }
 
 .color-podcast {
-    color: #F7AF0B;
+    color: #936707
+    /* Older bad contrast hexa #F7AF0B; */ 
 }
 
 .color-presse {
@@ -338,7 +339,8 @@ p,a,figcaption,h2,h3,h4 {
 }
 
 .contact-link, .links {
-    color: #E5AD34;
+    color: #9C640E;
+    /* Older bad contrast hexa #E5AD34; */
 }
 
 .vl {
@@ -442,7 +444,7 @@ p,a,figcaption,h2,h3,h4 {
 }
 
 .gray-ateliers {
-    color: #BBBBBB;
+    color: #707070;
 }
 
 .hr-long {
@@ -451,7 +453,11 @@ p,a,figcaption,h2,h3,h4 {
 
 footer {
     background-color: #41413f;
-    color: #919191;
+    color: #C5C5C5;
+}
+
+footer a {
+    color: #C5C5C5;
 }
 
 /* PODCASTS */
