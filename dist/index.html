@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Philomoos</title>
+    <meta
+      name="description"
+      content="Ateliers de philosophie et de création pour enfants"
+    />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <link
@@ -13,7 +17,9 @@
   </head>
   <body>
     <!--Navbar-->
-    <nav class="flex-row lg:flex lg:justify-center w-full fixed bg-white z-50 lg:mt-12">
+    <nav
+      class="flex-row lg:flex lg:justify-center w-full fixed bg-white z-50 lg:mt-12"
+    >
       <!--Logo-->
       <div class="flex my-8 mx-2 justify-evenly items-center">
         <div class="w-3/5 lg:w-48">
@@ -21,7 +27,7 @@
             class="object-fill"
             src="assets/img/elements/logo-philomoos.png"
             alt="Logo typographique de Philomoos avec une typographie
-	    de type origam"
+	    de type origami"
           />
         </div>
         <!--Hamburger-->
@@ -30,7 +36,7 @@
           class="cursor-pointer lg:hidden"
           tabindex="0"
           aria-haspopup="true"
-          aria-control="menu-mobile"
+          aria-controls="menu-mobile"
           aria-label="menu"
           role="button"
         >
@@ -98,13 +104,15 @@
     <section id="accueil">
       <div class="bg-boat-lg" title="Bâteau en origami coloré">
         <div
-          class="cont-accueil flex flex-col justify-center lg:justify-start pt-28 mb-12 text-center
-	  lg:absolute lg:top-32 lg:left-8"
+          class="cont-accueil flex flex-col justify-center lg:justify-start pt-12 mb-12 text-center lg:absolute lg:top-32 lg:left-8"
         >
-          <h1 class="slogan -mt-1 text-xl lg:text-2xl">
+	  <h1 class="slogan -mt-1 mb-3 text-3xl lg:text-6xl">
+	    PHILOSOPHER,
+          </h1>
+          <h2 class="slogan -mt-1 text-xl lg:text-2xl">
             CRÉER <br class="lg:hidden" />
             ET RÊVER LE MONDE DE DEMAIN
-          </h1>
+          </h2>
           <hr class="hr-style mx-auto my-6 w-16" />
           <p class="text-xs tracking-wider px-5 lg:text-sm lg:font-semibold">
             LES ATELIERS DE PHILOSOPHIE ET DE CRÉATION PHILOMOOS<br
@@ -128,32 +136,42 @@
             <a
               title="Lien vers facebook de Philomoos"
               href="https://fr-fr.facebook.com/philomoos/"
-              ><i class="fa fa-facebook mx-1"></i
-            ></a>
+              target="_blank"
+              ><i class="fa fa-facebook mx-1"></i>
+              <span class="sr-only">Ouvre une nouvelle fenêtre</span>
+            </a>
             <a
               title="Lien vers instagram de Philomoos"
               href="https://www.instagram.com/philomoos/"
-              ><i class="fa fa-instagram mx-1"></i
-            ></a>
-            <a title="Lien vers pinterest de Philomoos" href=""
-              ><i class="fa fa-pinterest-p mx-1"></i
-            ></a>
+              target="_blank"
+              ><i class="fa fa-instagram mx-1"></i>
+              <span class="sr-only">Ouvre une nouvelle fenêtre</span>
+            </a>
+            <a title="Lien vers pinterest de Philomoos" href="" target="_blank"
+              ><i class="fa fa-pinterest-p mx-1"></i>
+              <span class="sr-only">Ouvre une nouvelle fenêtre</span>
+            </a>
           </div>
           <!-- Socials Desktop -->
           <div class="socials pt-6 hidden lg:block lg:pt-8">
             <a
               title="Lien vers facebook de Philomoos"
               href="https://fr-fr.facebook.com/philomoos/"
-              ><i class="fa fa-facebook mx-2 fa-lg"></i
-            ></a>
+              target="_blank"
+              ><i class="fa fa-facebook mx-2 fa-lg"></i>
+              <span class="sr-only">Ouvre une nouvelle fenêtre</span>
+            </a>
             <a
               title="Lien vers instagram de Philomoos"
               href="https://www.instagram.com/philomoos/"
-              ><i class="fa fa-instagram mx-2 fa-lg"></i
-            ></a>
-            <a title="Lien vers pinterest de Philomoos" href=""
-              ><i class="fa fa-pinterest-p mx-2 fa-lg"></i
-            ></a>
+              target="_blank"
+              ><i class="fa fa-instagram mx-2 fa-lg"></i>
+              <span class="sr-only">Ouvre une nouvelle fenêtre</span>
+            </a>
+            <a title="Lien vers pinterest de Philomoos" href="" target="_blank"
+              ><i class="fa fa-pinterest-p mx-2 fa-lg"></i>
+              <span class="sr-only">Ouvre une nouvelle fenêtre</span>
+            </a>
           </div>
 
           <div
@@ -165,9 +183,7 @@
       </div>
     </section>
     <section>
-      <div
-        class="flex flex-col justify-center lg:flex-row lg:mx-auto lg:w-2/3"
-      >
+      <div class="flex flex-col justify-center lg:flex-row lg:mx-auto lg:w-2/3">
         <div class="lg:w-4/5">
           <h2 class="font-thin lg:text-2xl tracking-widest text-center">
             QU'EST CE QUE<br />
@@ -193,130 +209,473 @@
             classes de primaire dans le département du Finistère (29).
           </p>
           <div class="text-center pt-6 lg:text-left lg:px-5 lg:pt-12">
-            <a class="contact-link text-xs tracking-wider" href="#"
-              >[ TÉLÉCHARGER NOTRE CHARTE ÉTHIQUE ]</a
+            <a class="contact-link text-xs tracking-wider" href="./assets/files/charte-philomoos.pdf"
+              >[ TÉLÉCHARGER NOTRE CHARTE ÉTHIQUE (PDF) ]</a
             >
           </div>
         </div>
       </div>
-      <!-- Slideshow container -->
-      <div class="slideshow mx-auto max-w-screen-lg mt-8 relative">
-        <!-- Full-width images  -->
-        <div class="my-slides mx-5 aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/1.jpg"
-            alt="Deux enfants, un au premier plan et un second
-		derrière en activité créative Philomoos, ils font du découpages"
-            class="object-cover"
-          />
-        </div>
+      <!-- Slideshow container mobile-->
+      <div class="lg:hidden">
+	  <div class="slideshow mx-auto max-w-screen-lg mt-8 relative">
+	    <!-- Full-width images  -->
+	    <div class="my-slides mx-5 aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/1.jpg"
+		alt="Deux enfants en activité créative, ils font du découpages"
+		class="object-cover"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/2.jpg"
-            alt="Une piramide de cubes pleins de collages, résultat
-		d'une activité créative Philomoos"
-            class="object-cover"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/2.jpg"
+		alt="Une pyramide de cubes pleins de collages"
+		class="object-cover"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/3.jpg"
-            alt="Des enfants sur des chaises en cercle levant la main
-		lors d'un atelier de philosophie"
-            class="object-cover"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/3.jpg"
+		alt="Des enfants sur des chaises en cercle levant la main"
+		class="object-cover"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/4.jpg"
-            alt="Deux enfants faisant du découpage et souriant"
-            class="object-cover"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/4.jpg"
+		alt="Deux enfants faisant du découpage et souriant"
+		class="object-cover"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/5.jpg"
-            alt="Mains d'enfants en plein collage et découpage"
-            class="object-cover"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/5.jpg"
+		alt="Mains d'enfants en plein collage et découpage"
+		class="object-cover"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/6.jpg"
-            alt="Enfant avec un masque de monstre bleu"
-            class="object-contain"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/6.jpg"
+		alt="Enfant avec un masque de monstre bleu"
+		class="object-contain"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/7.jpg"
-            alt="Enfants autour d'une carte, pointant du doigt des
-		localisations"
-            class="object-cover"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/7.jpg"
+		alt="Enfants autour d'une carte, pointant du doigt des
+		    localisations"
+		class="object-cover"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/8.jpg"
-            alt="Deux enfants, le premier rigole le second écrit"
-            class="object-contain"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/8.jpg"
+		alt="Deux enfants, le premier rigole le second écrit"
+		class="object-contain"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/9.jpg"
-            alt="Gros plan sur un collage de coeur on peut lire le
-		mot créer"
-            class="object-cover"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/9.jpg"
+		alt="Gros plan sur un collage de coeur on peut lire le
+		    mot créer"
+		class="object-cover"
+	      />
+	    </div>
 
-        <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
-          <img
-            src="assets/img/ateliers/10.jpg"
-            alt="Gros plan sur deux mains tenant une ficelle ou le
-		mot rêverie est accroché"
-            class="object-cover"
-          />
-        </div>
+	    <div class="my-slides mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/10.jpg"
+		alt="Deux mains tenant une ficelle ou le
+		    mot rêverie est accroché"
+		class="object-cover"
+	      />
+	    </div>
 
-        <!-- Next and previous buttons -->
-        <a
-          class="prev cursor-pointer absolute top-2/4 ml-1"
-          onclick="plusSlides(-1)"
-          ><img
-            src="assets/img/elements/fleche-gauche.png"
-            alt="fleche grise en direction de la gauche"
-            class="h-4 lg:h-12"
-        /></a>
-        <a
-          class="next cursor-pointer absolute top-2/4 right-0 mr-1"
-          onclick="plusSlides(1)"
-          ><img
-            src="assets/img/elements/fleche-droite.png"
-            alt="fleche grise en directiond de la droite"
-            class="h-4 lg:h-12"
-        /></a>
+	    <!-- Next and previous buttons -->
+	    <a
+	      class="prev cursor-pointer absolute top-2/4 ml-1"
+	      tabindex="0"
+	      onclick="plusSlides(-1)"
+	      ><img
+		src="assets/img/elements/fleche-gauche.png"
+		alt="fleche grise en direction de la gauche"
+		class="h-4 lg:h-12"
+	    /></a>
+	    <a
+	      class="next cursor-pointer absolute top-2/4 right-0 mr-1"
+	      tabindex="0"
+	      onclick="plusSlides(1)"
+	      ><img
+		src="assets/img/elements/fleche-droite.png"
+		alt="fleche grise en directiond de la droite"
+		class="h-4 lg:h-12"
+	    /></a>
+	  </div>
+	  <div class="flex justify-center items-center my-3">
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(1)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(2)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(3)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(4)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(5)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      tabindex="0"
+	      onclick="currentSlide(6)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(7)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(8)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(9)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot"
+	      class="dot"
+	      onclick="currentSlide(10)"
+	    ></a>
+	  </div>
       </div>
-      <div class="flex justify-center items-center my-3">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
-        <span class="dot" onclick="currentSlide(9)"></span>
-        <span class="dot" onclick="currentSlide(10)"></span>
+      <!-- Slideshow container desktop-->
+      <div class="hidden lg:block">
+	  <div class="slideshow mx-auto max-w-screen-lg mt-8 relative">
+	    <!-- Full-width images  -->
+	    <div class="my-slides-desktop mx-5 aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/1.jpg"
+		alt="Deux enfants en activité créative, ils font du découpages"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/2.jpg"
+		alt="Une pyramide de cubes pleins de collages"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/3.jpg"
+		alt="Des enfants sur des chaises en cercle levant la main"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/4.jpg"
+		alt="Deux enfants faisant du découpage et souriant"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/5.jpg"
+		alt="Mains d'enfants en plein collage et découpage"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/6.jpg"
+		alt="Enfant avec un masque de monstre bleu"
+		class="object-contain"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/7.jpg"
+		alt="Enfants autour d'une carte, pointant du doigt des
+		    localisations"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/8.jpg"
+		alt="Deux enfants, le premier rigole le second écrit"
+		class="object-contain"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/9.jpg"
+		alt="Gros plan sur un collage de coeur on peut lire le
+		    mot créer"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/10.jpg"
+		alt="Deux mains tenant une ficelle ou le
+		    mot rêverie est accroché"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/11.jpg"
+		alt="Adolescent dessinant une main"
+		class="object-contain"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/12.jpg"
+		alt="Adolescente souriant tout en dessinant"
+		class="object-contain"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/13.jpg"
+		alt="Fanny et un adolescent en discussion"
+		class="object-contain"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/14.jpg"
+		alt="Planche de collage et découpage"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/15.jpg"
+		alt="Fanny et des enfants discutant en cercle"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/16.jpg"
+		alt="Angie et des adolescentes devant des planches au mur"
+		class="object-cover"
+	      />
+	    </div>
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/17.jpg"
+		alt="Mots et oeil découpés"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/18.jpg"
+		alt="Illustration découpées, une montagne, un oeil"
+		class="object-contain"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/19.jpg"
+		alt="Des mains dessinant sur une planche noire"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/20.jpg"
+		alt="Une main faisant un collage"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <div class="my-slides-desktop mx-5 hidden fade aspect-w-16 aspect-h-7 lg:mx-16">
+	      <img
+		src="assets/img/ateliers/21.jpg"
+		alt="Adolescent dessinant sur une planche, on peut lire black is power"
+		class="object-cover"
+	      />
+	    </div>
+
+	    <!-- Next and previous buttons -->
+	    <a
+	      class="prev cursor-pointer absolute top-2/4 ml-1"
+	      tabindex="0"
+	      onclick="plusSlides(-1)"
+	      ><img
+		src="assets/img/elements/fleche-gauche.png"
+		alt="fleche grise en direction de la gauche"
+		class="h-4 lg:h-12"
+	    /></a>
+	    <a
+	      class="next cursor-pointer absolute top-2/4 right-0 mr-1"
+	      tabindex="0"
+	      onclick="plusSlides(1)"
+	      ><img
+		src="assets/img/elements/fleche-droite.png"
+		alt="fleche grise en directiond de la droite"
+		class="h-4 lg:h-12"
+	    /></a>
+	  </div>
+	  <div class="flex justify-center items-center my-4">
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(1)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(2)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(3)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(4)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(5)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(6)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(7)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(8)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(9)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(10)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(11)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(12)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(13)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(14)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(15)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(16)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(17)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(18)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(19)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(20)"
+	    ></button>
+	    <button
+	      aria-label="navigation dot-desktop"
+	      class="dot-desktop"
+	      onclick="currentSlide(21)"
+	    ></button>
+	  </div>
       </div>
       <div class="flex flex-col">
         <div class="lg:flex lg:flex-row lg:mx-auto lg:w-2/3 lg:mt-20">
@@ -354,7 +713,9 @@
           </div>
           <div class="mx-auto flex flex-col lg:ml-8 lg:mt-8 2xl:ml-32">
             <div class="vl h-20 mx-auto lg:h-32"></div>
-            <p class="tracking-wider text-sm mt-6 subtitles text-center lg:text-base">
+            <p
+              class="tracking-wider text-sm mt-6 subtitles text-center lg:text-base"
+            >
               VOUS SOUHAITEZ ORGANISER <br />
               UN ATELIER ?
             </p>
@@ -372,75 +733,85 @@
         title="trame de fond grise florale"
       >
         <div class="absolute self-center">
-          <h2 class="font-thin text-center tracking-widest mt-20 lg:mt-48 lg:text-2xl">
+          <h2
+            class="font-thin text-center tracking-widest mt-20 lg:mt-48 lg:text-2xl"
+          >
             ILS NOUS SOUTIENNENT
           </h2>
           <hr class="hr-style mx-auto mt-6 w-16 lg:w-24 lg:mt-12 lg:mb-20" />
           <div class="flex items-center justify-center flex-wrap lg:flex-col">
-	    <div class="flex items-center justify-center flex-wrap">
-		<a href="https://www.franceinter.fr"
-		  ><img
-		    src="assets/img/elements/partenaires/inter.png"
-		    alt="Logo de france Inter, texte blanc dans un carré rouge sur un carré noir"
-		    class="w-12 h-auto mx-2 lg:w-32"
-		/></a>
-		<a href="https://www.centrepompidou.fr"
-		  ><img
-		    src="assets/img/elements/partenaires/pompidou.png"
-		    alt="Logo du centre pompidou noir sur
+            <div class="flex items-center justify-center flex-wrap">
+              <a href="https://www.franceinter.fr" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/inter.png"
+                  alt="Logo de france Inter, texte blanc dans un carré rouge sur un carré noir"
+                  class="w-12 h-auto mx-2 lg:w-32"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+              <a href="https://www.centrepompidou.fr" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/pompidou.png"
+                  alt="Logo du centre pompidou noir sur
 			fond blanc"
-		    class="w-20 h-auto mx-2 lg:w-40"
-		/></a>
-		<a href="https://www.gobelins.fr"
-		  ><img
-		    src="assets/img/elements/partenaires/gobelins.png"
-		    alt="Logo de l'école Gobelins, un cercle bleu au dessus d'une forme diagonales bleues"
-		    class="w-24 h-auto mx-2 lg:w-44"
-		/></a>
-		<a href="https://www.education.gouv.fr/"
-		  ><img
-		    src="assets/img/elements/partenaires/educ.png"
-		    alt="Logo du ministère de l'éducation
-			nationale drapeau français avec Mariane et é jaune"
-		    class="w-12 h-auto mx-2 lg:w-32"
-		/></a>
-		<a href="https://fr.unesco.org/"
-		  ><img
-		    src="assets/img/elements/partenaires/unesco.png"
-		    alt="Logo de l'unesco avec le bâtiment de l'unesco dont les colonnes sont faites avec les
-			lettres de l'unesco"
-		    class="w-32 h-auto mx-2 lg:w-52"
-		/></a>
-		<a href="https://www.editionsfirst.fr"
-		  ><img
-		    src="assets/img/elements/partenaires/first.png"
-		    alt="Logo typographique des éditions
+                  class="w-20 h-auto mx-2 lg:w-40"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+              <a href="https://www.gobelins.fr" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/gobelins.png"
+                  alt="Logo de l'école Gobelins, un cercle bleu au dessus d'une forme diagonales bleues"
+                  class="w-24 h-auto mx-2 lg:w-44"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+              <a href="https://www.education.gouv.fr/" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/educ.png"
+                  alt="Logo du ministère de l'éducation
+			nationale drapeau français avec Mariane"
+                  class="w-12 h-auto mx-2 lg:w-32"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+              <a href="https://fr.unesco.org/" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/unesco.png"
+                  alt="Logo de l'unesco avec le bâtiment de l'unesco"
+                  class="w-32 h-auto mx-2 lg:w-52"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+              <a href="https://www.editionsfirst.fr" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/first.png"
+                  alt="Logo typographique des éditions
 			first, le logo et noir, le text est First Éditions"
-		    class="w-12 h-auto mx-2 lg:w-32"
-		/></a>
-	    </div>
-	    <div class="flex items-center justify-center">
-		<a href="https://www.bpi.fr/"
-		  ><img
-		    src="assets/img/elements/partenaires/bpi.png"
-		    alt="Logo
+                  class="w-12 h-auto mx-2 lg:w-32"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+            </div>
+            <div class="flex items-center justify-center">
+              <a href="https://www.bpi.fr/" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/bpi.png"
+                  alt="Logo
 			de la bpi avec l'escalier noir sur fond blanc"
-		    class="w-24 h-auto mx-2 lg:w-44"
-		/></a>
-		<a href="https://www.drawingnowartfair.com/"
-		  ><img
-		    src="assets/img/elements/partenaires/drawing-now.png"
-		    alt="Logo de drawing art, il y a
+                  class="w-24 h-auto mx-2 lg:w-44"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+              <a href="https://www.drawingnowartfair.com/" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/drawing-now.png"
+                  alt="Logo de drawing art, il y a
 			écrit drawing art en noir sur un gribouilli orangé"
-		    class="w-12 h-auto mx-2 lg:w-32"
-		/></a>
-		<a href="https://usbeketrica.com/fr"
-		  ><img
-		    src="assets/img/elements/partenaires/usbek.png"
-		    alt="Logo de usbek et rica, il y a écrit usbek et rica en noir"
-		    class="w-24 h-auto mx-2 lg:w-44"
-		/></a>
-	    </div>
+                  class="w-12 h-auto mx-2 lg:w-32"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+              <a href="https://usbeketrica.com/fr" target="_blank"
+                ><img
+                  src="assets/img/elements/partenaires/usbek.png"
+                  alt="Logo de usbek et rica, il y a écrit usbek et rica en noir"
+                  class="w-24 h-auto mx-2 lg:w-44"
+                /><span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -456,9 +827,9 @@
             alt="Portrait de Fanny"
             class="w-3/4 mx-auto"
           />
-          <h2 class="font-thin text-center tracking-widest mt-6">
+          <h3 class="font-thin text-center tracking-widest mt-6">
             FANNY BOURRILLON
-          </h2>
+          </h3>
           <hr class="hr-style mx-auto my-3 w-16" />
           <p class="text-sm px-5">
             enseigne la philosophie de l'art et les Humanités à l'École des
@@ -477,9 +848,9 @@
             alt="Portrait de Angie"
             class="w-3/4 mx-auto"
           />
-          <h2 class="font-thin text-center tracking-widest mt-6">
+          <h3 class="font-thin text-center tracking-widest mt-6">
             ANGIE GADEA
-          </h2>
+          </h3>
           <hr class="hr-style mx-auto my-3 w-16" />
           <p class="text-sm px-5">
             est diplomée d'un master en design d'intérieur de l'Université
@@ -504,17 +875,19 @@
       </div>
       <!--Team Section Desktop-->
       <div class="hidden lg:flex justify-center pb-12">
-	<div class="w-1/3 2xl:w-1/4 mx-20 mt-36">
-	    <h2 class="font-thin text-center tracking-widest text-2xl">L'ÉQUIPE</h2>
-	    <hr class="hr-style mx-auto my-6 w-16" />
-	    <img
+        <div class="w-1/3 2xl:w-1/4 mx-20 mt-36">
+          <h2 class="font-thin text-center tracking-widest text-2xl">
+            L'ÉQUIPE
+          </h2>
+          <hr class="hr-style mx-auto my-6 w-16" />
+          <img
             src="assets/img/elements/portraits/angie.png"
             alt="Portrait de Angie"
             class="w-3/4 mx-auto mt-40"
           />
-          <h2 class="font-thin text-center tracking-widest mt-6 text-2xl">
+          <h3 class="font-thin text-center tracking-widest mt-6 text-2xl">
             ANGIE GADEA
-          </h2>
+          </h3>
           <hr class="hr-style mx-auto my-6 w-20" />
           <p class="text-sm px-5">
             est diplomée d'un master en design d'intérieur de l'Université
@@ -525,16 +898,16 @@
             mếlant arts plastiques et arts graphiques pour la confection
             d'objets originaux et uniques.
           </p>
-	</div>
-	<div class="w-1/3 2xl:w-1/4 flex flex-col mx-20">
-	   <img
+        </div>
+        <div class="w-1/3 2xl:w-1/4 flex flex-col mx-20">
+          <img
             src="assets/img/elements/portraits/fanny.png"
             alt="Portrait de Fanny"
             class="w-3/4 mx-auto"
           />
-          <h2 class="font-thin text-center tracking-widest mt-6 text-2xl">
+          <h3 class="font-thin text-center tracking-widest mt-6 text-2xl">
             FANNY BOURRILLON
-          </h2>
+          </h3>
           <hr class="hr-style mx-auto my-6 w-20" />
           <p class="text-sm px-5">
             enseigne la philosophie de l'art et les Humanités à l'École des
@@ -546,7 +919,7 @@
             régulièrement en concerts en tant que soliste ou avec d'autres
             musiciens et artistes.
           </p>
-	  <div class="vl h-36 mx-auto mt-6"></div>
+          <div class="vl h-36 mx-auto mt-6"></div>
           <p class="tracking-wider mt-6 subtitles text-center">
             VOUS SOUHAITEZ ORGANISER <br />
             UN ATELIER ?
@@ -556,9 +929,7 @@
             class="text-center contact-link tracking-wider pt-1 pb-6"
             >[ CONTACTEZ-NOUS ]</a
           >
-
- 
-	</div>
+        </div>
       </div>
     </section>
     <!-- About Workshops -->
@@ -568,7 +939,9 @@
         alt="Déchirure de papier faisant le lien avec la section
 	suivante"
       />
-      <div class="flex flex-wrap lg:flex-nowrap justify-center py-6 lg:mx-52 lg:justify-start">
+      <div
+        class="flex flex-wrap lg:flex-nowrap justify-center py-6 lg:mx-52 lg:justify-start"
+      >
         <div class="lg:w-2/5">
           <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">
             À QUI S'ADRESSENT <br />
@@ -587,7 +960,9 @@
           Nous organisons aussi des discussions pour des classes allophones.
         </p>
       </div>
-      <div class="flex flex-wrap justify-center py-6 lg:mx-52 lg:justify-start lg:flex-nowrap">
+      <div
+        class="flex flex-wrap justify-center py-6 lg:mx-52 lg:justify-start lg:flex-nowrap"
+      >
         <div class="lg:w-2/5">
           <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">
             COMMENT SE DÉROULE <br />
@@ -595,40 +970,44 @@
           </h2>
           <hr class="hr-style mx-auto my-3 w-16 lg:my-6" />
         </div>
-	<div class="lg:w-3/4 lg:mt-6 2xl:-ml-16 flex flex-col">
-	    <p class="text-sm px-5 pb-3">
-	      Les ateliers philomoos se déroulent en deux temps : une partie
-	      philosophique et une partie créative. Chaque discussion philosophique
-	      pose une question spécifique consultable dans la section
-	      <a href="#ateliers-2" class="links">les ateliers</a>
-	    </p>
-	    <a
-	      href="#ateliers-2"
-	      class="text-center contact-link text-sm tracking-wider pt-1 py-3 lg:text-left lg:px-5" 
-	      >[ NOS ATELIERS<br class="lg:hidden"/>
-	      POUR ENFANTS & ADOLESCENTS ]</a
-	    >
-	    <p class="text-sm px-5 py-3">
-	      L'intervenant·e en philosophie &laquo; guide &raquo; les réponses afin
-	      de construire une réflexion autour du problème soulevé. Il s'agit de
-	      favoriser une écoute attentive, de construire un raisonnement et une
-	      réponse <em>avec</em> les autres.
-	    </p>
-	    <p class="text-sm px-5 py-3">
-	      Lors de l'atelier de création, l'enfant est invité à s'exprimer
-	      autrement que par la parole et développer à la fois la confiance en
-	      soi et la créativité. Nous proposons des activités &laquo; sur mesure
-	      &raquo; avec des matériaux à chaque fois renouvelés et inspirés de
-	      différents courants de l'histoire des arts.
-	    </p>
-	</div>
+        <div class="lg:w-3/4 lg:mt-6 2xl:-ml-16 flex flex-col">
+          <p class="text-sm px-5 pb-3">
+            Les ateliers philomoos se déroulent en deux temps : une partie
+            philosophique et une partie créative. Chaque discussion
+            philosophique pose une question spécifique consultable dans la
+            section
+            <a href="#ateliers-2" class="links">les ateliers</a>
+          </p>
+          <a
+            href="#ateliers-2"
+            class="text-center contact-link text-sm tracking-wider pt-1 py-3 lg:text-left lg:px-5"
+            >[ NOS ATELIERS<br class="lg:hidden" />
+            POUR ENFANTS & ADOLESCENTS ]</a
+          >
+          <p class="text-sm px-5 py-3">
+            L'intervenant·e en philosophie &laquo; guide &raquo; les réponses
+            afin de construire une réflexion autour du problème soulevé. Il
+            s'agit de favoriser une écoute attentive, de construire un
+            raisonnement et une réponse <em>avec</em> les autres.
+          </p>
+          <p class="text-sm px-5 py-3">
+            Lors de l'atelier de création, l'enfant est invité à s'exprimer
+            autrement que par la parole et développer à la fois la confiance en
+            soi et la créativité. Nous proposons des activités &laquo; sur
+            mesure &raquo; avec des matériaux à chaque fois renouvelés et
+            inspirés de différents courants de l'histoire des arts.
+          </p>
+        </div>
       </div>
       <img
         src="assets/img/elements/visuel-luis.jpg"
         alt="Illustration d'une enfant allongée les bras
-	croisés derrière la tête, souriante et entourée de plantes"
+	croisés derrière la tête"
+        class="w-screen"
       />
-      <div class="flex flex-wrap justify-center py-6 lg:mx-52 lg:justify-start lg:flex-nowrap">
+      <div
+        class="flex flex-wrap justify-center py-6 lg:mx-52 lg:justify-start lg:flex-nowrap"
+      >
         <div class="lg:w-2/5">
           <h2 class="font-thin text-center tracking-widest mt-3 lg:text-2xl">
             LES CRÉATIONS
@@ -645,7 +1024,9 @@
           un objet original.
         </p>
       </div>
-      <div class="flex flex-wrap justify-center pt-6 pb-12 lg:mx-52 lg:justify-start lg:flex-nowrap">
+      <div
+        class="flex flex-wrap justify-center pt-6 pb-12 lg:mx-52 lg:justify-start lg:flex-nowrap"
+      >
         <div class="lg:w-2/5">
           <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">
             LES ATELIERS <br />
@@ -667,353 +1048,388 @@
     </section>
     <!--Catalog mobile-->
     <section id="ateliers-2">
-	<div class="lg:hidden">
-	  <div class="flex flex-wrap justify-center py-6">
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-3">
-		LE CATALOGUE <br />
-		DES ATELIERS
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	    </div>
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-6">
-		QU'EST CE QU'UN RÊVE?
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	      <p class="text-sm px-5">
-		PHILO : L'intérêt philosophique de cet atelier est de questionner
-		les certitudes des enfants quant à leurs rêves : comment savoir
-		qu'en ce moment même nous ne sommes pas entrain de rêver ? <br />
-		CRÉATION : Les enfants réalisent un attrape-rêve revisité.
-	      </p>
-	    </div>
-	  </div>
-	  <div class="flex flex-wrap justify-center py-6">
-	    <div class="w-1/4 pb-6">
-	      <img
-		src="assets/img/elements/visuels/visuel-01.png"
-		alt="Des cercles bleus qui se superposent
+      <div class="lg:hidden">
+        <div class="flex flex-wrap justify-center py-6">
+          <div>
+            <h3 class="font-thin text-center tracking-widest mt-3">
+              LE CATALOGUE <br />
+              DES ATELIERS
+            </h3>
+            <hr class="hr-style mx-auto my-3 w-16" />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-6">
+              QU'EST CE QU'UN RÊVE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : L'intérêt philosophique de cet atelier est de questionner
+              les certitudes des enfants quant à leurs rêves : comment savoir
+              qu'en ce moment même nous ne sommes pas entrain de rêver ? <br />
+              CRÉATION : Les enfants réalisent un attrape-rêve revisité.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="w-1/4 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-01.png"
+              alt="Des cercles bleus qui se superposent
 		    dessinés à la main"
-	      />
-	    </div>
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-3">
-		EST-CE QU'ON PEUT VIVRE <br />
-		SANS AIMER?
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	      <p class="text-sm px-5">
-		PHILO : Les enfants sont invités à réfléchir à leurs amitiés, à
-		l'amour et à la question du lien : qu'est ce qui fait que nous
-		aimons une personne ? Est-ce parce qu'elle est aimable qu'on l'aime
-		? Où est-ce l'inverse ? <br />
-		CRÉATION : Réalisation d'un &laquo; carnet du coeur &raquo;.
-	      </p>
-	    </div>
-	  </div>
-	  <div class="flex flex-wrap justify-center py-6">
-	    <div class="w-1/6 pb-6">
-	      <img
-		src="assets/img/elements/visuels/visuel-02.png"
-		alt="Un coeur rouge dessiné à la main."
-	      />
-	    </div>
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-3">
-		ÊTRE COURAGEUX, EST-CE<br />
-		N'AVOIR PEUR DE RIEN?
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	      <p class="text-sm px-5">
-		PHILO : Il s'agit d'amener les enfants à réfléchir à ce que c'est
-		que la peur, à la définir donc, et à aller plus loin en examinant
-		quelle peut être son utilité dans la vie quotidienne comme dans les
-		grandes actions qui demandent du courage. <br />
-		CRÉATION : Lors de l'atelier créatif les enfants réalisent leur
-		propre masque de monstre.
-	      </p>
-	    </div>
-	  </div>
-	  <div class="flex flex-wrap justify-center pb-6">
-	    <div class="vl h-12 mx-auto"></div>
-	    <div>
-	      <img
-		src="assets/img/elements/illustration-luis-02.jpg"
-		alt="Des animaux dans un bâteau avec
-		    la mascotte de philomoos et un autre enfant, il y a une giraphe, un hippopotame, un cochon, un ours et un
-		    perroquet"
-	      />
-	    </div>
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-3">
-		LES ANIMAUX SONT-ILS <br />
-		&laquo;DIFFÉRENTS&raquo; DE NOUS?
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	      <p class="text-sm px-5">
-		PHILO : Très tôt les enfants témoignent d'un intérêt pour les
-		animaux. Pourtant ce lien avec l'animal est rarement questionné avec
-		les enfants : pourquoi aimons-nous les animaux ? Sommes-nous
-		différents des autres animaux ? Qu'avons-nous en commun ? <br />
-		CRÉATION : Lors de l'atelier créatif nous proposons la réalisation
-		d'un objet mobile &laquo; animal totem &raquo;
-	      </p>
-	    </div>
-	  </div>
-	  <div class="flex flex-wrap justify-center py-6">
-	    <div class="vl h-32 mx-auto mb-6"></div>
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-3">
-		QU'EST CE QUE <br />
-		LA NATURE?
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	      <p class="text-sm px-5">
-		PHILO : Nous demandons aux enfants de réfléchir à la place de
-		l'humain dans la nature : sommes-nous &laquo; dans &raquo; la nature
-		? Est-elle extérieure à nous ? La discussion philosophique vise à
-		repenser et à comprendre ce qui nous relie au reste du vivant et à
-		notre environnement. <br />
-		CRÉATION : Réalisation d'un portrait composite à la manière des
-		portraits du peintre italien Giuseppe Arcimboldo.
-	      </p>
-	    </div>
-	  </div>
-	  <div class="flex flex-wrap justify-center py-6">
-	    <div class="w-1/12 pb-6">
-	      <img
-		src="assets/img/elements/visuels/visuel-03.png"
-		alt="Une feuille jaune dessinée à la main."
-	      />
-	    </div>
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-3">
-		QU'EST CE QUE <br />
-		LA TOLÉRANCE?
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	      <p class="text-sm px-5">
-		PHILO : Les enfants comprennent très tôt ce que c'est que la
-		méchanceté, la violence ou la moquerie... En s'interrogeant sur ce
-		qu'il y a d'intolérable dans les comportements violents, il s'agira
-		de penser avec eux l'importance de la tolérance et de la douceur.
-		<br />
-		CRÉATION : Réalisation collective d'un &laquo; arbre de la tolérance
-		&raquo;.
-	      </p>
-	    </div>
-	  </div>
-	  <div class="flex flex-wrap justify-center pb-6">
-	    <div class="vl h-12 mx-auto"></div>
-	    <div>
-	      <img
-		src="assets/img/elements/illustration-luis-03.jpg"
-		alt="Mascotte de Philomoos regardant
-		    le ciel avec un téléscope, une chouette est perchée sur le téléscope"
-	      />
-	    </div>
-	    <div>
-	      <h2 class="font-thin text-center tracking-widest mt-3">
-		POURQUOI VOULONS-NOUS <br />
-		EXPLORER L'UNIVERS?
-	      </h2>
-	      <hr class="hr-style mx-auto my-3 w-16" />
-	      <p class="text-sm px-5">
-		PHILO : Dans cet atelier on s'interroge sur l'humain et cette
-		curiosité qui est la nôtre. Cherchons-nous à nous évader de la Terre
-		? Quel intérêt avons-nous à explorer l'univers ?
-		<br />
-		CRÉATION : Réalisation d'une mosaïque, d'après une technique de
-		&laquo; tessellation &raquo;. Sous la forme d'un &laquo; pavage
-		infini &raquo; les enfants réalisent une figure (oiseau, poisson ou
-		créature) et la déclinent autant qu'ils le souhaitent.
-	      </p>
-	    </div>
-	  </div>
-	  <div class="flex flex-col flex-wrap justify-center py-6">
-	    <div class="vl h-32 mx-auto mb-6"></div>
-	    <div class="text-center">
-	      <p class="tracking-wider text-xs mt-6 px-5">
-		VOUS ÊTES UNE STRUCTURE <br />
-		UNE INSTITUTION (MUSÉE, MÉDIATHÈQUE...) <br />
-		OU UNE ÉCOLE ET VOUS SOUHAITEZ <br />
-		ORGANISER UN ATELIER À PARTIR <br />
-		D'UNE THÉMATIQUE QUI N'EST PAS <br />
-		DANS LA LISTE ? PAS DE PROBLÈME !
-	      </p>
-	      <a
-		href="#contact"
-		class="contact-link text-xs tracking-wider pt-1 pb-6"
-		>[ CONTACTEZ-NOUS ]</a
-	      >
-	    </div>
-	  </div>
-	</div>
-	<!--Catalog desktop-->
-	<div class="hidden lg:flex mx-52 justify-center">
-	    <div class="flex flex-col">
-		<h2 class="font-thin text-center tracking-widest mt-3 lg:text-2xl">
-			LE CATALOGUE <br />
-			DES ATELIERS
-		</h2>
-		<hr class="hr-style mx-auto my-3 w-16" />
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-3 lg:text-2xl">
-		    EST-CE QU'ON PEUT VIVRE <br />
-		    SANS AIMER?
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : Les enfants sont invités à réfléchir à leurs amitiés, à
-		    l'amour et à la question du lien : qu'est ce qui fait que nous
-		    aimons une personne ? Est-ce parce qu'elle est aimable qu'on l'aime
-		    ? Où est-ce l'inverse ? <br />
-		    CRÉATION : Réalisation d'un &laquo; carnet du coeur &raquo;.
-		  </p>
-		</div>
-		<div class="w-1/6 pb-6 mx-auto">
-		  <img
-		    src="assets/img/elements/visuels/visuel-02.png"
-		    alt="Un coeur rouge dessiné à la main."
-		  />
-		</div>
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-3 text-2xl">
-		    LES ANIMAUX SONT-ILS <br />
-		    &laquo;DIFFÉRENTS&raquo; DE NOUS?
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : Très tôt les enfants témoignent d'un intérêt pour les
-		    animaux. Pourtant ce lien avec l'animal est rarement questionné avec
-		    les enfants : pourquoi aimons-nous les animaux ? Sommes-nous
-		    différents des autres animaux ? Qu'avons-nous en commun ? <br />
-		    CRÉATION : Lors de l'atelier créatif nous proposons la réalisation
-		    d'un objet mobile &laquo; animal totem &raquo;
-		  </p>
-		</div>
-		<div class="vl h-12 mx-auto"></div>
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-3 text-2xl">
-		    QU'EST CE QUE <br />
-		    LA TOLÉRANCE?
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : Les enfants comprennent très tôt ce que c'est que la
-		    méchanceté, la violence ou la moquerie... En s'interrogeant sur ce
-		    qu'il y a d'intolérable dans les comportements violents, il s'agira
-		    de penser avec eux l'importance de la tolérance et de la douceur.
-		    <br />
-		    CRÉATION : Réalisation collective d'un &laquo; arbre de la tolérance
-		    &raquo;.
-		  </p>
-		</div>
-		<div class="w-1/6 pb-6 mx-auto">
-		  <img
-		    src="assets/img/elements/visuels/visuel-04.png"
-		    alt="Une nuée de points bleu"
-		  />
-		</div>
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-3 text-2xl">
-		    POURQUOI VOULONS-NOUS <br />
-		    EXPLORER L'UNIVERS?
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : Dans cet atelier on s'interroge sur l'humain et cette
-		    curiosité qui est la nôtre. Cherchons-nous à nous évader de la Terre
-		    ? Quel intérêt avons-nous à explorer l'univers ?
-		    <br />
-		    CRÉATION : Réalisation d'une mosaïque, d'après une technique de
-		    &laquo; tessellation &raquo;. Sous la forme d'un &laquo; pavage
-		    infini &raquo; les enfants réalisent une figure (oiseau, poisson ou
-		    créature) et la déclinent autant qu'ils le souhaitent.
-		  </p>
-		</div>
-	    </div>
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              EST-CE QU'ON PEUT VIVRE <br />
+              SANS AIMER?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Les enfants sont invités à réfléchir à leurs amitiés, à
+              l'amour et à la question du lien : qu'est ce qui fait que nous
+              aimons une personne ? Est-ce parce qu'elle est aimable qu'on
+              l'aime ? Où est-ce l'inverse ? <br />
+              CRÉATION : Réalisation d'un &laquo; carnet du coeur &raquo;.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="w-1/6 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-02.png"
+              alt="Un coeur rouge dessiné à la main."
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              ÊTRE COURAGEUX, EST-CE<br />
+              N'AVOIR PEUR DE RIEN?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Il s'agit d'amener les enfants à réfléchir à ce que c'est
+              que la peur, à la définir donc, et à aller plus loin en examinant
+              quelle peut être son utilité dans la vie quotidienne comme dans
+              les grandes actions qui demandent du courage. <br />
+              CRÉATION : Lors de l'atelier créatif les enfants réalisent leur
+              propre masque de monstre.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center pb-6">
+          <div class="vl h-12 mx-auto"></div>
+          <div>
+            <img
+              src="assets/img/elements/illustration-luis-02.jpg"
+              alt="Des animaux dans un bâteau avec
+		    la mascotte de philomoos et un autre enfant"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              LES ANIMAUX SONT-ILS <br />
+              &laquo;DIFFÉRENTS&raquo; DE NOUS?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Très tôt les enfants témoignent d'un intérêt pour les
+              animaux. Pourtant ce lien avec l'animal est rarement questionné
+              avec les enfants : pourquoi aimons-nous les animaux ? Sommes-nous
+              différents des autres animaux ? Qu'avons-nous en commun ? <br />
+              CRÉATION : Lors de l'atelier créatif nous proposons la réalisation
+              d'un objet mobile &laquo; animal totem &raquo;
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="vl h-32 mx-auto mb-6"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              QU'EST CE QUE <br />
+              LA NATURE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Nous demandons aux enfants de réfléchir à la place de
+              l'humain dans la nature : sommes-nous &laquo; dans &raquo; la
+              nature ? Est-elle extérieure à nous ? La discussion philosophique
+              vise à repenser et à comprendre ce qui nous relie au reste du
+              vivant et à notre environnement. <br />
+              CRÉATION : Réalisation d'un portrait composite à la manière des
+              portraits du peintre italien Giuseppe Arcimboldo.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="w-1/12 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-03.png"
+              alt="Une feuille jaune dessinée à la main."
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              QU'EST CE QUE <br />
+              LA TOLÉRANCE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Les enfants comprennent très tôt ce que c'est que la
+              méchanceté, la violence ou la moquerie... En s'interrogeant sur ce
+              qu'il y a d'intolérable dans les comportements violents, il
+              s'agira de penser avec eux l'importance de la tolérance et de la
+              douceur.
+              <br />
+              CRÉATION : Réalisation collective d'un &laquo; arbre de la
+              tolérance &raquo;.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center pb-6">
+          <div class="vl h-12 mx-auto"></div>
+          <div>
+            <img
+              src="assets/img/elements/illustration-luis-03.jpg"
+              alt="Mascotte Philomoos regardant
+		    le ciel, une chouette est perchée sur le téléscope"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              POURQUOI VOULONS-NOUS <br />
+              EXPLORER L'UNIVERS?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Dans cet atelier on s'interroge sur l'humain et cette
+              curiosité qui est la nôtre. Cherchons-nous à nous évader de la
+              Terre ? Quel intérêt avons-nous à explorer l'univers ?
+              <br />
+              CRÉATION : Réalisation d'une mosaïque, d'après une technique de
+              &laquo; tessellation &raquo;. Sous la forme d'un &laquo; pavage
+              infini &raquo; les enfants réalisent une figure (oiseau, poisson
+              ou créature) et la déclinent autant qu'ils le souhaitent.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center pb-6">
+          <div class="vl h-12 mx-auto"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-6">
+              POURQUOI AVONS-NOUS <br />
+              PEUR DE LA MORT?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Lors de cet atelier, il s'agit de partager les peurs que
+              nous éprouvons vis-à-vis de notre propre mort, ou de celle d'un
+              proche, pour l'aborder philosophiquement et avec davantage de
+              recul et d'acceptation. <br />
+              CRÉATION : Lors de l'atelier créatif, il est proposé aux enfants
+              de réaliser un mandala à partir d'éléments naturels.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-wrap justify-center py-6">
+          <div class="vl h-32 mx-auto mb-6"></div>
+          <div class="text-center">
+            <p class="tracking-wider text-xs mt-6 px-5">
+              VOUS ÊTES UNE STRUCTURE <br />
+              UNE INSTITUTION (MUSÉE, MÉDIATHÈQUE...) <br />
+              OU UNE ÉCOLE ET VOUS SOUHAITEZ <br />
+              ORGANISER UN ATELIER À PARTIR <br />
+              D'UNE THÉMATIQUE QUI N'EST PAS <br />
+              DANS LA LISTE ? PAS DE PROBLÈME !
+            </p>
+            <a
+              href="#contact"
+              class="contact-link text-xs tracking-wider pt-1 pb-6"
+              >[ CONTACTEZ-NOUS ]</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--Catalog desktop-->
+      <div class="hidden lg:flex mx-52 justify-center">
+        <div class="flex flex-col">
+          <h3
+            class="font-thin text-center tracking-widest mt-3 lg:text-2xl mt-32"
+          >
+            LE CATALOGUE <br />
+            DES ATELIERS
+          </h3>
+          <hr class="hr-style mx-auto my-3 w-16" />
+          <div>
+            <h4
+              class="font-thin text-center tracking-widest mt-80 pt-8 lg:text-2xl"
+            >
+              EST-CE QU'ON PEUT VIVRE <br />
+              SANS AIMER?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Les enfants sont invités à réfléchir à leurs amitiés, à
+              l'amour et à la question du lien : qu'est ce qui fait que nous
+              aimons une personne ? Est-ce parce qu'elle est aimable qu'on
+              l'aime ? Où est-ce l'inverse ? <br />
+              CRÉATION : Réalisation d'un &laquo; carnet du coeur &raquo;.
+            </p>
+          </div>
+          <div class="w-1/6 mx-auto my-32">
+            <img
+              src="assets/img/elements/visuels/visuel-02.png"
+              alt="Un coeur rouge dessiné à la main."
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              LES ANIMAUX SONT-ILS <br />
+              &laquo;DIFFÉRENTS&raquo; DE NOUS?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Très tôt les enfants témoignent d'un intérêt pour les
+              animaux. Pourtant ce lien avec l'animal est rarement questionné
+              avec les enfants : pourquoi aimons-nous les animaux ? Sommes-nous
+              différents des autres animaux ? Qu'avons-nous en commun ? <br />
+              CRÉATION : Lors de l'atelier créatif nous proposons la réalisation
+              d'un objet mobile &laquo; animal totem &raquo;
+            </p>
+          </div>
+          <div class="vl h-72 my-12 mx-auto"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              QU'EST CE QUE <br />
+              LA TOLÉRANCE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Les enfants comprennent très tôt ce que c'est que la
+              méchanceté, la violence ou la moquerie... En s'interrogeant sur ce
+              qu'il y a d'intolérable dans les comportements violents, il
+              s'agira de penser avec eux l'importance de la tolérance et de la
+              douceur.
+              <br />
+              CRÉATION : Réalisation collective d'un &laquo; arbre de la
+              tolérance &raquo;.
+            </p>
+          </div>
+          <div class="w-1/3 mx-auto my-32">
+            <img
+              src="assets/img/elements/visuels/visuel-04.png"
+              alt="Une nuée de points bleu"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              POURQUOI VOULONS-NOUS <br />
+              EXPLORER L'UNIVERS?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Dans cet atelier on s'interroge sur l'humain et cette
+              curiosité qui est la nôtre. Cherchons-nous à nous évader de la
+              Terre ? Quel intérêt avons-nous à explorer l'univers ?
+              <br />
+              CRÉATION : Réalisation d'une mosaïque, d'après une technique de
+              &laquo; tessellation &raquo;. Sous la forme d'un &laquo; pavage
+              infini &raquo; les enfants réalisent une figure (oiseau, poisson
+              ou créature) et la déclinent autant qu'ils le souhaitent.
+            </p>
+          </div>
+        </div>
 
-	    <div class="flex flex-col">
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-6 text-2xl">
-		    QU'EST CE QU'UN RÊVE?
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : L'intérêt philosophique de cet atelier est de questionner
-		    les certitudes des enfants quant à leurs rêves : comment savoir
-		    qu'en ce moment même nous ne sommes pas entrain de rêver ? <br />
-		    CRÉATION : Les enfants réalisent un attrape-rêve revisité.
-		  </p>
-		</div>
-		<div class="w-1/4 pb-6 mx-auto">
-		  <img
-		    src="assets/img/elements/visuels/visuel-01.png"
-		    alt="Des cercles bleus qui se superposent
+        <div class="flex flex-col mt-56">
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-6 text-2xl">
+              QU'EST CE QU'UN RÊVE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : L'intérêt philosophique de cet atelier est de questionner
+              les certitudes des enfants quant à leurs rêves : comment savoir
+              qu'en ce moment même nous ne sommes pas entrain de rêver ? <br />
+              CRÉATION : Les enfants réalisent un attrape-rêve revisité.
+            </p>
+          </div>
+          <div class="w-1/3 mx-auto my-32">
+            <img
+              src="assets/img/elements/visuels/visuel-01.png"
+              alt="Des cercles bleus qui se superposent
 			dessinés à la main"
-		  />
-		</div>
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-3 text-2xl">
-		    ÊTRE COURAGEUX, EST-CE<br />
-		    N'AVOIR PEUR DE RIEN?
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : Il s'agit d'amener les enfants à réfléchir à ce que c'est
-		    que la peur, à la définir donc, et à aller plus loin en examinant
-		    quelle peut être son utilité dans la vie quotidienne comme dans les
-		    grandes actions qui demandent du courage. <br />
-		    CRÉATION : Lors de l'atelier créatif les enfants réalisent leur
-		    propre masque de monstre.
-		  </p>
-		</div>
-		<div class="vl h-12 mx-auto"></div>
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-3">
-		    QU'EST CE QUE <br />
-		    LA NATURE?
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : Nous demandons aux enfants de réfléchir à la place de
-		    l'humain dans la nature : sommes-nous &laquo; dans &raquo; la nature
-		    ? Est-elle extérieure à nous ? La discussion philosophique vise à
-		    repenser et à comprendre ce qui nous relie au reste du vivant et à
-		    notre environnement. <br />
-		    CRÉATION : Réalisation d'un portrait composite à la manière des
-		    portraits du peintre italien Giuseppe Arcimboldo.
-		  </p>
-		</div>
-		<div class="w-1/12 pb-6 mx-auto">
-		  <img
-		    src="assets/img/elements/visuels/visuel-03.png"
-		    alt="Une feuille jaune dessinée à la main."
-		  />
-		</div>
-		<div>
-		  <h2 class="font-thin text-center tracking-widest mt-3">
-		    POURQUOI AVONS-NOUS <br />
-		    PEUR DE LA MORT
-		  </h2>
-		  <hr class="hr-style mx-auto my-3 w-16" />
-		  <p class="text-sm px-5">
-		    PHILO : Lors de cet atelier, il s'agit de partager les peurs que nous éprouvons vis-à-vis
-		    de notre propre mort, ou de celle d'un proche, pour l'aborder philosophiquement et avec
-		    davantage de recul et d'acceptation. <br />
-		    CRÉATION : Lors de l'atelier créatif, il est proposé aux enfants de réaliser un mandala à
-		    partir d'éléments naturels.
-		  </p>
-		</div>
-
-
-
-
-
-	    </div>
-	</div>
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              ÊTRE COURAGEUX, EST-CE<br />
+              N'AVOIR PEUR DE RIEN?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Il s'agit d'amener les enfants à réfléchir à ce que c'est
+              que la peur, à la définir donc, et à aller plus loin en examinant
+              quelle peut être son utilité dans la vie quotidienne comme dans
+              les grandes actions qui demandent du courage. <br />
+              CRÉATION : Lors de l'atelier créatif les enfants réalisent leur
+              propre masque de monstre.
+            </p>
+          </div>
+          <div class="vl h-72 my-12 mx-auto"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              QU'EST CE QUE <br />
+              LA NATURE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Nous demandons aux enfants de réfléchir à la place de
+              l'humain dans la nature : sommes-nous &laquo; dans &raquo; la
+              nature ? Est-elle extérieure à nous ? La discussion philosophique
+              vise à repenser et à comprendre ce qui nous relie au reste du
+              vivant et à notre environnement. <br />
+              CRÉATION : Réalisation d'un portrait composite à la manière des
+              portraits du peintre italien Giuseppe Arcimboldo.
+            </p>
+          </div>
+          <div class="w-1/12 mx-auto my-32">
+            <img
+              src="assets/img/elements/visuels/visuel-03.png"
+              alt="Une feuille jaune dessinée à la main."
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              POURQUOI AVONS-NOUS <br />
+              PEUR DE LA MORT?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Lors de cet atelier, il s'agit de partager les peurs que
+              nous éprouvons vis-à-vis de notre propre mort, ou de celle d'un
+              proche, pour l'aborder philosophiquement et avec davantage de
+              recul et d'acceptation. <br />
+              CRÉATION : Lors de l'atelier créatif, il est proposé aux enfants
+              de réaliser un mandala à partir d'éléments naturels.
+            </p>
+          </div>
+          <div class="flex flex-col flex-wrap justify-center pb-6">
+            <div class="vl h-32 mx-auto mt-12 mb-6"></div>
+            <div class="text-center">
+              <p class="tracking-wider mt-6 px-5">
+                VOUS ÊTES UNE STRUCTURE <br />
+                UNE INSTITUTION (MUSÉE, MÉDIATHÈQUE...) <br />
+                OU UNE ÉCOLE ET VOUS SOUHAITEZ <br />
+                ORGANISER UN ATELIER À PARTIR <br />
+                D'UNE THÉMATIQUE QUI N'EST PAS <br />
+                DANS LA LISTE ? PAS DE PROBLÈME !
+              </p>
+              <a href="#contact" class="contact-link tracking-wider pt-1 pb-6"
+                >[ CONTACTEZ-NOUS ]</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <img
         src="assets/img/elements/dechirure-02.jpg"
         alt="Déchirure de papier faisant le lien avec la séction
@@ -1021,345 +1437,626 @@
       />
     </section>
     <section class="gray-philo">
-      <div class="flex flex-wrap justify-center">
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
+      <!--Teenagers workshops catalog mobile-->
+      <div class="lg:hidden">
+        <div class="flex flex-wrap justify-center">
+          <div>
+            <h2 class="font-thin text-center tracking-widest mt-3">
+              LES ATELIERS <br />
+              POUR ADOLESCENTS <br />
+              [13 à 16 ans]
+            </h2>
+            <hr class="hr-style mx-auto my-3 w-16" />
+          </div>
+          <p class="text-sm px-5 pb-6">
+            Les ateliers philomoos ne s’arrêtent pas aux enfants ! Ils profitent
+            également aux adolescent.es, dont les questionnements sont riches.
+            Ces ateliers sont aussi un moyen pour eux de s’exprimer en groupe,
+            d’être à l’écoute des autres, à un âge où se construire se fait
+            souvent au travers du regard des autres.
+          </p>
+        </div>
+        <hr class="hr-long w-2/5 mx-auto my-3" />
+        <div class="flex flex-wrap justify-center py-6">
+          <div>
+            <h3 class="font-thin text-center tracking-widest mt-3">
+              LE CATALOGUE <br />
+              DES ATELIERS
+            </h3>
+            <hr class="hr-style mx-auto my-3 w-16" />
+          </div>
+          <div>
+            <img
+              src="assets/img/elements/ateliers-ado-04.jpg"
+              alt="Main d'enfant en train de faire un
+		    collage"
+            />
+            <h4 class="font-thin text-center tracking-widest mt-6">
+              POURQUOI RÊVONS-NOUS? <br />
+              À QUOI SERVENT <br />
+              NOS RÊVES?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Comment nous assurer qu’en ce moment même, nous ne sommes
+              pas entrain de rêver ? Il s’agit lors de cet atelier d’aborder la
+              puissance des rêves à créer des mondes et à contribuer à la
+              connaissance que l’on a de soi-même et des autres.
+              <br />
+              CRÉATION : L’atelier créatif consiste à créer un attrape-rêve qui
+              symbolise les rêves que nous formons aussi bien de jour que de
+              nuit.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="w-1/4 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-05.png"
+              alt="Nuée de demi-cercles jaune dessinés
+		    à la main"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              POURQUOI ET COMMENT<br />
+              RÊVER LA VILLE <br />
+              DE DEMAIN?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : À mi chemin entre philosophie et urbanisme nous invitons
+              les plus jeunes à penser et à imaginer la ville du futur : comment
+              souhaitons-nous vivre ensemble ?
+              <br />
+              CRÉATION : Réinvention d'un quartier de sa ville à partir d’un
+              plan ou d’une photo aérienne de son quartier.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="w-1/6 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-06.png"
+              alt="Nuée de forme géométriques arrondies
+		    d'un côté, pointu de l'autres de couleur bleu."
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              LA FRONTIÈRE ENTRE<br />
+              L'HOMME ET L'ANIMAL <br />
+              EXISTE-T-ELLE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : À l’heure de la crise climatique et de la disparition de
+              très nombreuses espèces animales, cet atelier propose une
+              réflexion cruciale sur l’idée longtemps admise d’une « supériorité
+              » humaine sur le reste du vivant.
+              <br />
+              CRÉATION : Nous proposons aux participant.es de réaliser un mobile
+              composé d’animaux totem.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center pt-6">
+          <div class="vl h-32 mx-auto"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-12">
+              LA NATURE EXISTE-T-ELLE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Y a-t-il une nature à l’extérieur de nous ? Dans cet
+              atelier nous questionnons la traditionnelle opposition entre
+              nature et culture afin de repenser notre rapport au vivant, comme
+              aux autres espèces.
+              <br />
+              CRÉATION : Composition faite d’éléments naturels formant un être
+              hybride humain, animal et végétal.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="vl h-12 mx-auto"></div>
+          <div class="pt-6">
+            <img
+              src="assets/img/elements/ateliers-ado.jpg"
+              alt="Une main en train de coller
+		    une forme qu'on distingue mal"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              PEUT-ON VIVRE <br />
+              SANS AIMER?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Aimer est-il aussi naturel que de respirer ? Existe-t-il
+              différentes manières d’aimer ? Que pouvons-nous apprendre du
+              sentiment d’amour ?
+              <br />
+              CRÉATION : En réalisant un « carnet du cœur », les adolescents
+              interrogent leurs amours et peuvent mêler dessins, collages, et
+              travail poétique.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="w-1/4 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-07.png"
+              alt="Tâche rouge"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              EST-ON PLUS LIBRE À <br />
+              MESURE QU'ON EST PLUS <br />
+              TOLÉRANT
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Être tolérant ce n’est pas « tout » accepter. Mais alors
+              qu’est-ce qu’être tolérant ? Quel rapport entretient la tolérance
+              avec la liberté ?
+              <br />
+              CRÉATION : L’atelier créatif consiste à réaliser un portrait, de
+              profil, entouré de préjugés. L’intériorité de l’esprit est
+              l’espace proposé pour s’en défendre, s’en protéger.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="hidden w-1/6 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-08.png"
+              alt="Une tâche bleu et un cercle bleu,
+		    les deux dessinés à la main"
+            />
+          </div>
+          <div class="vl h-12 mx-auto"></div>
+          <div class="mt-12">
+            <img
+              src="assets/img/elements/ateliers-ado-02.jpg"
+              alt="Les mains d'un adolescent dessinant sur une planche noir"
+              class="pb-6"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              LA MORT FAIT-ELLE PARTIE<br />
+              DE LA VIE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Que connaissons-nous de la mort ? Pourquoi la
+              redoutons-nous ? L’enjeu, lors de cet atelier, est de penser la
+              mort et de mesurer à quel point cette réflexion peut contribuer à
+              « bien » vivre.
+              <br />
+              CRÉATION : Sur une grande planche faisant office d'écran noir ou
+              de ciel étoilé, les jeunes inscrivent tous les éléments réels et
+              symboliques qui les rattachent à la vie.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="vl h-28 mx-auto mb-6"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              OBSERVER LE CIEL EST-CE <br />
+              UNE ÉVASION?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Depuis les récits mythiques les plus anciens, l’humain a
+              observé le ciel. Les scientifiques comme les premiers philosophes
+              ont souhaité comprendre l’origine de l’Univers et en connaître les
+              lois. Cherchons-nous à nous “évader” de la terre lorsque nous
+              observons le ciel ?
+              <br />
+              CRÉATION : Chaque participant·e réalise une pièce à décliner sans
+              fin par un procédé de tessellation inventé par Mauris Cornelits
+              Eicher.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="vl pt-12 h-12 mx-auto"></div>
+          <div class="mb-6 mt-12">
+            <img
+              src="assets/img/elements/ateliers-ado-03.jpg"
+              alt="Un enfant dessine sur
+		    une planche avec un homme noir dans un décor lunaire"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              SUIS-JE CELLE OU CELUI <br />
+              QUE JE MONTRE AUX <br />
+              AUTRES AU TRAVERS DES <br />
+              RÉSEAUX SOCIAUX?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Lors de l’atelier de philosophie l’intervenant·e
+              philosophe invite les adolescent·e·s à questionner leurs pratiques
+              des réseaux sociaux et, plus profondément, à questionner le
+              rapport qu’ils et elles entretiennent avec les images, et en
+              particulier leur propre image.
+              <br />
+              CRÉATION : L’atelier créatif consiste à réaliser un autoportrait
+              en multicouche avec des techniques de collages, de peinture et de
+              dessins.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="w-1/6 pb-6">
+            <img
+              src="assets/img/elements/visuels/visuel-09.png"
+              alt="Trois ligne rouge tracées à la main
+		    et parallèles"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              L'INTELLIGENCE <br />
+              ARTIFICIELLE <br />
+              PENSE-T-ELLE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : L’IA fascine car elle imite l’intelligence humaine tout en
+              étant beaucoup plus performante pour certaines tâches. Cependant,
+              peut-on dire qu’une IA « pense » ? Est-elle consciente d’elle-même
+              ?
+              <br />
+              CRÉATION : Inspiré du design fiction, l’atelier créatif propose à
+              chaque participant.e de réaliser une boîte à utopie à destination
+              d’une Intelligence artificielle de 2148...
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="vl h-32 mx-auto mb-12"></div>
+          <div>
+            <img
+              src="assets/img/elements/ateliers-ado-05.jpg"
+              alt="Un adolescent dessinant une main"
+            />
+            <h4 class="font-thin text-center tracking-widest mt-3">
+              DU GESTE À LA PAROLE, DE <br />
+              QUOI LA MAIN EST-ELLE LE <br />
+              SYMBOLE?
+            </h4>
+            <p class="gray-ateliers px-5 text-sm text-center italic">
+              Cet atelier était une commande du festival Drawing now de Paris en
+              Mars 2020.
+            </p>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : La main est &laquo; l’outil de tous les outils &raquo;, a
+              dit le philosophe Aristote. Mais la main n’est-elle pas davantage
+              encore qu’un outil ? Nous nous demanderons si la main n’est pas un
+              symbole de certaines de nos particularités en tant qu’humains.
+              <br />
+              CRÉATION :Il s’agit de représenter par le dessin une ou des mains
+              en y apposant un message : que diraient nos mains, si elles
+              pouvaient parler ?
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-wrap justify-center py-6">
+          <div class="text-center">
+            <p class="tracking-wider text-xs mt-6 px-5">
+              VOUS ÊTES UNE STRUCTURE <br />
+              UNE INSTITUTION (MUSÉE, MÉDIATHÈQUE...) <br />
+              OU UNE ÉCOLE ET VOUS SOUHAITEZ <br />
+              ORGANISER UN ATELIER À PARTIR <br />
+              D'UNE THÉMATIQUE QUI N'EST PAS <br />
+              DANS LA LISTE ? PAS DE PROBLÈME !
+            </p>
+            <a href="#contact" class="contact-link text-xs tracking-wider pt-1"
+              >[ CONTACTEZ-NOUS ]</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--Teenagers workshops catalog desktop-->
+      <div class="hidden lg:flex flex-nowrap pt-20 mx-52 justify-start">
+        <div class="w-2/5">
+          <h2 class="font-thin text-center tracking-widest mt-3 text-2xl">
             LES ATELIERS <br />
             POUR ADOLESCENTS <br />
             [13 à 16 ans]
           </h2>
           <hr class="hr-style mx-auto my-3 w-16" />
         </div>
-        <p class="text-sm px-5 pb-6">
-          Les ateliers philomoos ne s’arrêtent pas aux enfants ! Ils profitent
-          également aux adolescent.es, dont les questionnements sont riches. Ces
-          ateliers sont aussi un moyen pour eux de s’exprimer en groupe, d’être
-          à l’écoute des autres, à un âge où se construire se fait souvent au
-          travers du regard des autres.
-        </p>
-        <p class="text-sm px-5 hidden">
-          À la bibliothèque du Centre Pompidou à Paris, nous réalisons ces
-          ateliers depuis 2018 et adaptons l’offre des ateliers ci-dessous aux
-          classes et aux âges des participant.es de la 6e à la Terminale. Nous
-          organisons également à la demande des ateliers par petits groupes, en
-          dehors des ateliers d’éducation artistique et culturelle.
-        </p>
-      </div>
-      <hr class="hr-long w-2/5 mx-auto my-3" />
-      <div class="flex flex-wrap justify-center py-6">
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            LE CATALOGUE <br />
-            DES ATELIERS
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-        </div>
-        <div>
-          <img
-            src="assets/img/elements/ateliers-ado-04.jpg"
-            alt="Main d'enfant en train de faire un
-		collage"
-          />
-          <h2 class="font-thin text-center tracking-widest mt-6">
-            POURQUOI RÊVONS-NOUS? <br />
-            À QUOI SERVENT <br />
-            NOS RÊVES?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : Comment nous assurer qu’en ce moment même, nous ne sommes
-            pas entrain de rêver ? Il s’agit lors de cet atelier d’aborder la
-            puissance des rêves à créer des mondes et à contribuer à la
-            connaissance que l’on a de soi-même et des autres.
-            <br />
-            CRÉATION : L’atelier créatif consiste à créer un attrape-rêve qui
-            symbolise les rêves que nous formons aussi bien de jour que de nuit.
+        <div class="w-3/4 mt-4 2xl:-ml-16">
+          <p class="text-sm px-5 pb-6">
+            Les ateliers philomoos ne s’arrêtent pas aux enfants ! Ils profitent
+            également aux adolescent.es, dont les questionnements sont riches.
+            Ces ateliers sont aussi un moyen pour eux de s’exprimer en groupe,
+            d’être à l’écoute des autres, à un âge où se construire se fait
+            souvent au travers du regard des autres.
           </p>
         </div>
       </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="w-1/4 pb-6">
-          <img
-            src="assets/img/elements/visuels/visuel-05.png"
-            alt="Nuée de demi-cercles jaune dessinés
-		à la main"
-          />
+      <hr class="hidden lg:block hr-style mx-auto my-32 w-64" />
+      <div class="hidden lg:flex mx-52 justify-center pb-20">
+        <div class="flex flex-col">
+          <div>
+            <h3 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              LE CATALOGUE <br />
+              DES ATELIERS
+            </h3>
+            <hr class="hr-style mx-auto my-3 w-16" />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-72 text-2xl">
+              POURQUOI ET COMMENT<br />
+              RÊVER LA VILLE <br />
+              DE DEMAIN?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : À mi chemin entre philosophie et urbanisme nous invitons
+              les plus jeunes à penser et à imaginer la ville du futur : comment
+              souhaitons-nous vivre ensemble ?
+              <br />
+              CRÉATION : Réinvention d'un quartier de sa ville à partir d’un
+              plan ou d’une photo aérienne de son quartier.
+            </p>
+          </div>
+          <div class="w-1/3 my-32 mx-auto">
+            <img
+              src="assets/img/elements/visuels/visuel-06.png"
+              alt="Nuée de forme géométriques arrondies
+			d'un côté, pointu de l'autres de couleur bleu."
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-12 text-2xl">
+              LA NATURE EXISTE-T-ELLE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Y a-t-il une nature à l’extérieur de nous ? Dans cet
+              atelier nous questionnons la traditionnelle opposition entre
+              nature et culture afin de repenser notre rapport au vivant, comme
+              aux autres espèces.
+              <br />
+              CRÉATION : Composition faite d’éléments naturels formant un être
+              hybride humain, animal et végétal.
+            </p>
+          </div>
+          <div class="vl h-64 mx-auto my-12"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              EST-ON PLUS LIBRE À <br />
+              MESURE QU'ON EST PLUS <br />
+              TOLÉRANT
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Être tolérant ce n’est pas « tout » accepter. Mais alors
+              qu’est-ce qu’être tolérant ? Quel rapport entretient la tolérance
+              avec la liberté ?
+              <br />
+              CRÉATION : L’atelier créatif consiste à réaliser un portrait, de
+              profil, entouré de préjugés. L’intériorité de l’esprit est
+              l’espace proposé pour s’en défendre, s’en protéger.
+            </p>
+          </div>
+          <div class="w-1/3 my-32 mx-auto">
+            <img
+              src="assets/img/elements/visuels/visuel-08.png"
+              alt="Une tâche bleu et un cercle bleu,
+			les deux dessinés à la main"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              OBSERVER LE CIEL EST-CE <br />
+              UNE ÉVASION?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Depuis les récits mythiques les plus anciens, l’humain a
+              observé le ciel. Les scientifiques comme les premiers philosophes
+              ont souhaité comprendre l’origine de l’Univers et en connaître les
+              lois. Cherchons-nous à nous “évader” de la terre lorsque nous
+              observons le ciel ?
+              <br />
+              CRÉATION : Chaque participant·e réalise une pièce à décliner sans
+              fin par un procédé de tessellation inventé par Mauris Cornelits
+              Eicher.
+            </p>
+          </div>
+          <div class="vl h-64 mx-auto my-12"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              L'INTELLIGENCE <br />
+              ARTIFICIELLE <br />
+              PENSE-T-ELLE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : L’IA fascine car elle imite l’intelligence humaine tout en
+              étant beaucoup plus performante pour certaines tâches. Cependant,
+              peut-on dire qu’une IA « pense » ? Est-elle consciente d’elle-même
+              ?
+              <br />
+              CRÉATION : Inspiré du design fiction, l’atelier créatif propose à
+              chaque participant.e de réaliser une boîte à utopie à destination
+              d’une Intelligence artificielle de 2148...
+            </p>
+          </div>
+          <div class="vl h-20 mx-auto my-6"></div>
+          <div class="text-center">
+            <p class="tracking-wider text-base px-5">
+              VOUS ÊTES UNE STRUCTURE <br />
+              UNE INSTITUTION (MUSÉE, MÉDIATHÈQUE...) <br />
+              OU UNE ÉCOLE ET VOUS SOUHAITEZ <br />
+              ORGANISER UN ATELIER À PARTIR <br />
+              D'UNE THÉMATIQUE QUI N'EST PAS <br />
+              DANS LA LISTE ? PAS DE PROBLÈME !
+            </p>
+            <a
+              href="#contact"
+              class="contact-link text-base tracking-wider pt-1 pb-6"
+              >[ CONTACTEZ-NOUS ]</a
+            >
+          </div>
         </div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            POURQUOI ET COMMENT<br />
-            RÊVER LA VILLE <br />
-            DE DEMAIN?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : À mi chemin entre philosophie et urbanisme nous invitons les
-            plus jeunes à penser et à imaginer la ville du futur : comment
-            souhaitons-nous vivre ensemble ?
-            <br />
-            CRÉATION : Réinvention d'un quartier de sa ville à partir d’un plan
-            ou d’une photo aérienne de son quartier.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="w-1/6 pb-6">
-          <img
-            src="assets/img/elements/visuels/visuel-06.png"
-            alt="Nuée de forme géométriques arrondies
-		d'un côté, pointu de l'autres de couleur bleu."
-          />
-        </div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            LA FRONTIÈRE ENTRE<br />
-            L'HOMME ET L'ANIMAL <br />
-            EXISTE-T-ELLE?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : À l’heure de la crise climatique et de la disparition de
-            très nombreuses espèces animales, cet atelier propose une réflexion
-            cruciale sur l’idée longtemps admise d’une « supériorité » humaine
-            sur le reste du vivant.
-            <br />
-            CRÉATION : Nous proposons aux participant.es de réaliser un mobile
-            composé d’animaux totem.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center pt-6">
-        <div class="vl h-32 mx-auto"></div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-12">
-            LA NATURE EXISTE-T-ELLE?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : Y a-t-il une nature à l’extérieur de nous ? Dans cet atelier
-            nous questionnons la traditionnelle opposition entre nature et
-            culture afin de repenser notre rapport au vivant, comme aux autres
-            espèces.
-            <br />
-            CRÉATION : Composition faite d’éléments naturels formant un être
-            hybride humain, animal et végétal.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="vl h-12 mx-auto"></div>
-        <div class="pt-6">
-          <img
-            src="assets/img/elements/ateliers-ado.jpg"
-            alt="Gros plan sur une main en train de coller
-		une forme qu'on distingue mal, sous le bras on voit un collage du coeur humain."
-          />
-        </div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            PEUT-ON VIVRE <br />
-            SANS AIMER?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : Aimer est-il aussi naturel que de respirer ? Existe-t-il
-            différentes manières d’aimer ? Que pouvons-nous apprendre du
-            sentiment d’amour ?
-            <br />
-            CRÉATION : En réalisant un « carnet du cœur », les adolescents
-            interrogent leurs amours et peuvent mêler dessins, collages, et
-            travail poétique.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="w-1/4 pb-6">
-          <img
-            src="assets/img/elements/visuels/visuel-07.png"
-            alt="Tâche rouge"
-          />
-        </div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            EST-ON PLUS LIBRE À <br />
-            MESURE QU'ON EST PLUS <br />
-            TOLÉRANT
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : Être tolérant ce n’est pas « tout » accepter. Mais alors
-            qu’est-ce qu’être tolérant ? Quel rapport entretient la tolérance
-            avec la liberté ?
-            <br />
-            CRÉATION : L’atelier créatif consiste à réaliser un portrait, de
-            profil, entouré de préjugés. L’intériorité de l’esprit est l’espace
-            proposé pour s’en défendre, s’en protéger.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="hidden w-1/6 pb-6">
-          <img
-            src="assets/img/elements/visuels/visuel-08.png"
-            alt="Une tâche bleu et un cercle bleu,
-		les deux dessinés à la main"
-          />
-        </div>
-        <div class="vl h-12 mx-auto"></div>
-        <div class="mt-12">
-          <img
-            src="assets/img/elements/ateliers-ado-02.jpg"
-            alt="Les mains d'un adolescent, vues de
-		dessus dessinant sur une planche noir avec un coeur humain et des plantes, sur la table il y a
-		des crayons, des fiches, une paire de ciseau et des images"
-            class="pb-6"
-          />
-        </div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            LA MORT FAIT-ELLE PARTIE<br />
-            DE LA VIE?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : Que connaissons-nous de la mort ? Pourquoi la redoutons-nous
-            ? L’enjeu, lors de cet atelier, est de penser la mort et de mesurer
-            à quel point cette réflexion peut contribuer à « bien » vivre.
-            <br />
-            CRÉATION : Sur une grande planche faisant office d'écran noir ou de
-            ciel étoilé, les jeunes inscrivent tous les éléments réels et
-            symboliques qui les rattachent à la vie.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="vl h-28 mx-auto mb-6"></div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            OBSERVER LE CIEL EST-CE <br />
-            UNE ÉVASION?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : Depuis les récits mythiques les plus anciens, l’humain a
-            observé le ciel. Les scientifiques comme les premiers philosophes
-            ont souhaité comprendre l’origine de l’Univers et en connaître les
-            lois. Cherchons-nous à nous “évader” de la terre lorsque nous
-            observons le ciel ?
-            <br />
-            CRÉATION : Chaque participant·e réalise une pièce à décliner sans
-            fin par un procédé de tessellation inventé par Mauris Cornelits
-            Eicher.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="vl pt-12 h-12 mx-auto"></div>
-        <div class="mb-6 mt-12">
-          <img
-            src="assets/img/elements/ateliers-ado-03.jpg"
-            alt="Un enfant s'appliquant à dessiner sur
-		une planche avec un homme noir dans un décor lunaire, sur la table il y a du matériel servant
-		aux ateliers, des crayons, des photos, un tube de colle"
-          />
-        </div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            SUIS-JE CELLE OU CELUI <br />
-            QUE JE MONTRE AUX <br />
-            AUTRES AU TRAVERS DES <br />
-            RÉSEAUX SOCIAUX?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : Lors de l’atelier de philosophie l’intervenant·e philosophe
-            invite les adolescent·e·s à questionner leurs pratiques des réseaux
-            sociaux et, plus profondément, à questionner le rapport qu’ils et
-            elles entretiennent avec les images, et en particulier leur propre
-            image.
-            <br />
-            CRÉATION : L’atelier créatif consiste à réaliser un autoportrait en
-            multicouche avec des techniques de collages, de peinture et de
-            dessins.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="w-1/6 pb-6">
-          <img
-            src="assets/img/elements/visuels/visuel-09.png"
-            alt="Trois ligne rouge tracées à la main
-		et parallèles"
-          />
-        </div>
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            L'INTELLIGENCE <br />
-            ARTIFICIELLE <br />
-            PENSE-T-ELLE?
-          </h2>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : L’IA fascine car elle imite l’intelligence humaine tout en
-            étant beaucoup plus performante pour certaines tâches. Cependant,
-            peut-on dire qu’une IA « pense » ? Est-elle consciente d’elle-même ?
-            <br />
-            CRÉATION : Inspiré du design fiction, l’atelier créatif propose à
-            chaque participant.e de réaliser une boîte à utopie à destination
-            d’une Intelligence artificielle de 2148...
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center py-6">
-        <div class="vl h-32 mx-auto mb-6"></div>
-        <div>
-          <img
-            src="assets/img/elements/ateliers-ado-05.jpg"
-            alt="Un adolescent dessinant une main"
-          />
-          <h2 class="font-thin text-center tracking-widest mt-3">
-            DU GESTE À LA PAROLE, DE <br />
-            QUOI LA MAIN EST-ELLE LE <br />
-            SYMBOLE?
-          </h2>
-          <p class="gray-ateliers px-5 text-sm text-center italic">
-            Cet atelier était une commande du festival Drawing now de Paris en
-            Mars 2020.
-          </p>
-          <hr class="hr-style mx-auto my-3 w-16" />
-          <p class="text-sm px-5">
-            PHILO : La main est &laquo; l’outil de tous les outils &raquo;, a
-            dit le philosophe Aristote. Mais la main n’est-elle pas davantage
-            encore qu’un outil ? Nous nous demanderons si la main n’est pas un
-            symbole de certaines de nos particularités en tant qu’humains.
-            <br />
-            CRÉATION :Il s’agit de représenter par le dessin une ou des mains en
-            y apposant un message : que diraient nos mains, si elles pouvaient
-            parler ?
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-col flex-wrap justify-center py-6">
-        <div class="text-center">
-          <p class="tracking-wider text-xs mt-6 px-5">
-            VOUS ÊTES UNE STRUCTURE <br />
-            UNE INSTITUTION (MUSÉE, MÉDIATHÈQUE...) <br />
-            OU UNE ÉCOLE ET VOUS SOUHAITEZ <br />
-            ORGANISER UN ATELIER À PARTIR <br />
-            D'UNE THÉMATIQUE QUI N'EST PAS <br />
-            DANS LA LISTE ? PAS DE PROBLÈME !
-          </p>
-          <a href="#contact" class="contact-link text-xs tracking-wider pt-1"
-            >[ CONTACTEZ-NOUS ]</a
-          >
+
+        <div class="flex flex-col">
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-16 text-2xl">
+              POURQUOI RÊVONS-NOUS? <br />
+              À QUOI SERVENT <br />
+              NOS RÊVES?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Comment nous assurer qu’en ce moment même, nous ne sommes
+              pas entrain de rêver ? Il s’agit lors de cet atelier d’aborder la
+              puissance des rêves à créer des mondes et à contribuer à la
+              connaissance que l’on a de soi-même et des autres.
+              <br />
+              CRÉATION : L’atelier créatif consiste à créer un attrape-rêve qui
+              symbolise les rêves que nous formons aussi bien de jour que de
+              nuit.
+            </p>
+          </div>
+          <div class="w-1/3 mx-auto my-32">
+            <img
+              src="assets/img/elements/visuels/visuel-05.png"
+              alt="Nuée de demi-cercles jaune dessinés
+			à la main"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              LA FRONTIÈRE ENTRE<br />
+              L'HOMME ET L'ANIMAL <br />
+              EXISTE-T-ELLE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : À l’heure de la crise climatique et de la disparition de
+              très nombreuses espèces animales, cet atelier propose une
+              réflexion cruciale sur l’idée longtemps admise d’une « supériorité
+              » humaine sur le reste du vivant.
+              <br />
+              CRÉATION : Nous proposons aux participant.es de réaliser un mobile
+              composé d’animaux totem.
+            </p>
+          </div>
+          <div class="vl h-72 mx-auto my-12"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              EST-CE QU'ON PEUT VIVRE <br />
+              SANS AIMER?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Les enfants sont invités à réfléchir à leurs amitiés, à
+              l'amour et à la question du lien : qu'est ce qui fait que nous
+              aimons une personne ? Est-ce parce qu'elle est aimable qu'on
+              l'aime ? Où est-ce l'inverse ? <br />
+              CRÉATION : Réalisation d'un &laquo; carnet du coeur &raquo;.
+            </p>
+          </div>
+          <div class="w-1/3 mx-auto my-32">
+            <img
+              src="assets/img/elements/visuels/visuel-07.png"
+              alt="Tâche rouge"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              LA MORT FAIT-ELLE PARTIE<br />
+              DE LA VIE?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Que connaissons-nous de la mort ? Pourquoi la
+              redoutons-nous ? L’enjeu, lors de cet atelier, est de penser la
+              mort et de mesurer à quel point cette réflexion peut contribuer à
+              « bien » vivre.
+              <br />
+              CRÉATION : Sur une grande planche faisant office d'écran noir ou
+              de ciel étoilé, les jeunes inscrivent tous les éléments réels et
+              symboliques qui les rattachent à la vie.
+            </p>
+          </div>
+          <div class="vl h-64 mx-auto my-12"></div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              SUIS-JE CELLE OU CELUI <br />
+              QUE JE MONTRE AUX <br />
+              AUTRES AU TRAVERS DES <br />
+              RÉSEAUX SOCIAUX?
+            </h4>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : Lors de l’atelier de philosophie l’intervenant·e
+              philosophe invite les adolescent·e·s à questionner leurs pratiques
+              des réseaux sociaux et, plus profondément, à questionner le
+              rapport qu’ils et elles entretiennent avec les images, et en
+              particulier leur propre image.
+              <br />
+              CRÉATION : L’atelier créatif consiste à réaliser un autoportrait
+              en multicouche avec des techniques de collages, de peinture et de
+              dessins.
+            </p>
+          </div>
+          <div class="w-1/4 mx-auto my-32">
+            <img
+              src="assets/img/elements/visuels/visuel-09.png"
+              alt="Trois ligne rouge tracées à la main
+			et parallèles"
+            />
+          </div>
+          <div>
+            <h4 class="font-thin text-center tracking-widest mt-3 text-2xl">
+              DU GESTE À LA PAROLE, DE <br />
+              QUOI LA MAIN EST-ELLE LE <br />
+              SYMBOLE?
+            </h4>
+            <p class="gray-ateliers px-5 text-sm text-center italic">
+              Cet atelier était une commande du festival Drawing now de Paris en
+              Mars 2020.
+            </p>
+            <hr class="hr-style mx-auto my-3 w-16" />
+            <p class="text-sm px-5">
+              PHILO : La main est &laquo; l’outil de tous les outils &raquo;, a
+              dit le philosophe Aristote. Mais la main n’est-elle pas davantage
+              encore qu’un outil ? Nous nous demanderons si la main n’est pas un
+              symbole de certaines de nos particularités en tant qu’humains.
+              <br />
+              CRÉATION :Il s’agit de représenter par le dessin une ou des mains
+              en y apposant un message : que diraient nos mains, si elles
+              pouvaient parler ?
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Book section -->
     <section id="livre">
-      <div class="flex flex-wrap justify-center py-6">
-        <div>
-          <h2 class="font-thin text-center tracking-widest mt-6">LE LIVRE</h2>
+      <div
+        class="flex flex-wrap justify-center py-6 lg:flex-nowrap lg:mx-52 lg:justify-start"
+      >
+        <div class="w-2/5">
+          <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">
+            LE LIVRE
+          </h2>
           <hr class="hr-style mx-auto my-3 w-16" />
           <img
             class="w-32 h-32 rounded-full mx-auto my-6"
@@ -1367,35 +2064,46 @@
             alt="Portrait de Fanny et Angie"
           />
         </div>
-        <p class="text-sm px-5">
-          À la fois théorique et pratique, sérieux et original, cet ouvrage a
-          été imaginé pour vous amener à dialoguer avec vos enfants et réfléchir
-          ensemble aux grandes questions de la vie. Sept thématiques vous
-          invitent à entrer dans un univers philosophique et créatif, du rêve à
-          l'amitié, en passant par la mort, l'univers, la tolérance, l'animal et
-          la nature. Vous y serez guidé·e·s &laquo; pas à pas &raquo;.
-        </p>
-        <p class="text-sm px-5 pt-3">
-          <em>50 Activités pour philosopher avec ses enfants</em>, Fanny
-          Bourrillon et Angie Gadea, édition FIRST, septembre 2020.
-        </p>
+        <div class="lg:w-3/4 lg:mt-6 2xl:-ml-16">
+          <p class="text-sm px-5">
+            À la fois théorique et pratique, sérieux et original, cet ouvrage a
+            été imaginé pour vous amener à dialoguer avec vos enfants et
+            réfléchir ensemble aux grandes questions de la vie. Sept thématiques
+            vous invitent à entrer dans un univers philosophique et créatif, du
+            rêve à l'amitié, en passant par la mort, l'univers, la tolérance,
+            l'animal et la nature. Vous y serez guidé·e·s &laquo; pas à pas
+            &raquo;.
+          </p>
+          <p class="text-sm px-5 pt-3">
+            <em>50 Activités pour philosopher avec ses enfants</em>, Fanny
+            Bourrillon et Angie Gadea, édition FIRST, septembre 2020.
+          </p>
+        </div>
       </div>
+      <img
+        src="assets/img/elements/livre-large.jpg"
+        alt="Couverture du livre 50 activités pour philosopher
+      avec ses enfants"
+        class="hidden lg:block mx-auto w-2/3"
+      />
       <img
         src="assets/img/elements/livre-mobile.jpg"
         alt="Couverture du livre 50 activités pour philosopher avec ses
-	enfants, la couverture est colorée avec le titre en noir et des dessins d'animaux, de plantes, d'étoiles ou de formes
-	géométriques."
-        class="px-5"
+	enfants"
+        class="px-5 lg:hidden"
       />
       <div class="text-center">
-        <p class="tracking-wider text-sm mt-6 subtitles">
+        <p class="tracking-wider text-sm mt-6 lg:mt-12 lg:text-base subtitles">
           VOUS POUVEZ COMMANDER CE LIVRE <br />
           CHEZ VOTRE LIBRAIRE
         </p>
         <a
           href="https://www.lisez.com/livre-grand-format/50-activites-pour-philosopher-avec-ses-enfants-de-6-a-12-ans-des-ateliers-ludiques-pour-reflechir-et-creer-ensemble/9782412059623"
-          class="text-center contact-link text-sm tracking-wider pt-1 pb-6"
-          >[ OU EN LIGNE ]</a
+          class="text-center contact-link text-sm lg:text-base tracking-wider pt-1 pb-6"
+          target="_blank"
+          >[ OU EN LIGNE ]<span class="sr-only"
+            >Ouvre une nouvelle fenêtre</span
+          ></a
         >
       </div>
     </section>
@@ -1406,10 +2114,16 @@
         title="trame de fond grise florale"
       >
         <div class="absolute self-center">
-          <h2 class="font-thin text-center tracking-widest mt-20">PODCASTS</h2>
+          <h2
+            class="font-thin text-center tracking-widest mt-20 lg:mt-44 lg:text-2xl"
+          >
+            PODCAST
+          </h2>
           <hr class="hr-style mx-auto mt-6 w-16" />
-          <div class="flex items-center justify-center flex-wrap">
-            <div class="pt-6 pb-3">
+          <div
+            class="flex items-center justify-center flex-wrap lg:flex-col lg:my-16"
+          >
+            <div class="pt-6 pb-3 lg:pb-8">
               <figure>
                 <figcaption class="text-sm">
                   Écouter un atelier à St Rivoal (29)
@@ -1445,12 +2159,16 @@
     </section>
     <!-- Actu -->
     <section id="actu">
-      <div class="flex flex-wrap justify-center py-6">
+      <div
+        class="flex flex-wrap justify-center py-6 lg:flex-nowrap lg:flex-col lg:mx-auto lg:w-1/3"
+      >
         <div>
-          <h2 class="font-thin text-center tracking-widest mt-6">ACTUALITÉ</h2>
+          <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">
+            ACTUALITÉ
+          </h2>
           <hr class="hr-style mx-auto my-3 w-16" />
         </div>
-        <div class="px-5 pb-6">
+        <div class="px-5 lg:py-12 py-6">
           <h3 class="text-sm">
             Le 12 Juin 2021 venez assister à un colloque à la Bibliothèque
             Nationale de France à Paris ! Fanny Bourrillon y présentera les
@@ -1459,43 +2177,54 @@
           <a
             class="text-sm links"
             href="https://www.bnf.fr/fr/agenda/philosopher-avec-les-enfants-un-enjeu-politique-un-enjeu-pour-lemancipation"
+            target="_blank"
             >Philosopher avec les enfants : un enjeu politique, un enjeu pour
-            l’émancipation</a
+            l’émancipation<span class="sr-only"
+              >Ouvre une nouvelle fenêtre</span
+            ></a
           >
         </div>
-        <div class="vl h-12 text-center"></div>
-        <div class="px-5 py-6">
+        <div class="vl h-12 mx-auto lg:h-20"></div>
+        <div class="px-5 py-6 lg:py-12">
           <h3 class="text-sm">
             Les étudiant.es en DNMADE (diplôme des métiers d’art et du design)
             de l’école des Gobelins à Paris participent à l’encadrement des
             ateliers philomoos ! Dans le cadre d’un projet d’étude de première
             année, ils travaillent sur la chaîne Philomoos.TV :
           </h3>
-          <div class="py-6">
-            <img
-              src="assets/img/elements/tv/camille-nour.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Camille & Nour</p>
-            <img
-              src="assets/img/elements/tv/clara-sophie.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Clara & Sophie</p>
-            <img
-              src="assets/img/elements/tv/mateo-amina.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Matéo & Amina</p>
-            <img
-              src="assets/img/elements/tv/zoe-nathan.png"
-              alt="logo typographique"
-            />
-            <p class="text-sm pb-6 pt-3 text-center">Zoé & Nathan</p>
+          <div class="py-6 lg:flex lg:justify-center">
+            <div class="lg:w-1/2">
+              <img
+                src="assets/img/elements/tv/camille-nour.png"
+                alt="logo typographique avec lettre rectangulaires"
+                class="lg:h-32 lg:w-auto lg:mx-auto lg:object-contain"
+              />
+              <p class="text-sm pb-6 pt-3 text-center">Camille & Nour</p>
+              <img
+                src="assets/img/elements/tv/clara-sophie.png"
+                alt="logo typographique coloré avec des yeux pour les O"
+                class="lg:h-32 lg:w-auto lg:mx-auto"
+              />
+              <p class="text-sm pb-6 pt-3 text-center">Clara & Sophie</p>
+            </div>
+            <div class="lg:w-1/2">
+              <img
+                src="assets/img/elements/tv/mateo-amina.png"
+                alt="logo typographique avec penseur"
+                class="lg:h-32 lg:w-auto lg:mx-auto"
+              />
+              <p class="text-sm pb-6 pt-3 text-center">Matéo & Amina</p>
+              <img
+                src="assets/img/elements/tv/zoe-nathan.png"
+                alt="logo typographique avec yoda"
+                class="lg:h-32 lg:w-auto lg:mx-auto"
+              />
+              <p class="text-sm pb-6 pt-3 text-center">Zoé & Nathan</p>
+            </div>
           </div>
         </div>
-        <div class="vl h-12 text-center"></div>
-        <div class="px-5 py-6">
+        <div class="vl h-12 mx-auto lg:h-20"></div>
+        <div class="px-5 py-6 lg:py-12">
           <h3 class="text-sm">
             Les ateliers se poursuivent pendant la crise sanitaire ! Nous
             intervenons dans les écoles, et depuis cette année, les ateliers bpi
@@ -1506,15 +2235,18 @@
           <img
             src="assets/img/elements/actu/actu-masques.jpg"
             alt="photo de groupe d'une classe masquée"
+            class="lg:mx-auto lg:px-5 w-full"
           />
         </div>
       </div>
     </section>
     <!--Presse-->
     <section id="presse">
-      <div class="flex flex-wrap flex-col py-6">
+      <div class="flex flex-wrap flex-col py-6 lg:w-1/3 mx-auto">
         <div>
-          <h2 class="font-thin text-center tracking-widest mt-6">PRESSE</h2>
+          <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">
+            PRESSE
+          </h2>
           <hr class="hr-style mx-auto my-3 w-16" />
         </div>
         <div class="flex flex-col items-center flex-wrap px-5">
@@ -1526,7 +2258,10 @@
             />
             <a
               href="https://www.franceculture.fr/conferences/bibliotheque-publique-dinformation/peut-philosopher-avec-les-enfants"
-              >Peut-on philosopher avec les enfants ?</a
+              target="_blank"
+              >Peut-on philosopher avec les enfants ?<span class="sr-only"
+                >Ouvre une nouvelle fenêtre</span
+              ></a
             >
           </div>
           <div class="text-sm py-4 flex items-center w-full">
@@ -1537,8 +2272,12 @@
             />
             <a
               href="https://www.franceinter.fr/culture/la-mort-l-amour-ou-l-univers-comment-aider-nos-enfants-a-penser-le-monde-qui-les-entoure"
+              target="_blank"
               >La mort, l’amour, ou l’univers…<br />
-              Comment aider nos enfants à penser le monde qui les entoure ?</a
+              Comment aider nos enfants à penser le monde qui les entoure ?<span
+                class="sr-only"
+                >Ouvre une nouvelle fenêtre</span
+              ></a
             >
           </div>
           <div class="text-sm py-4 items-center flex w-full">
@@ -1550,13 +2289,18 @@
             <div>
               <a
                 href="https://usbeketrica.com/fr/article/pourquoi-continuer-a-rever-de-l-heureuse-necessite-du-reve"
-                >Pourquoi continuer à rêver? De l'heureuse nécessité du rêve</a
+                target="_blank"
+                >Pourquoi continuer à rêver? De l'heureuse nécessité du
+                rêve<span class="sr-only">Ouvre une >nouvelle fenêtre</span></a
               >
               <div class="mt-3">
                 <a
                   href="https://usbeketrica.com/fr/article/intelligence-artificielle-futur-collegiens"
+                  target="_blank"
                   >Des collégiens imaginent l’intelligence artificielle du
-                  futur</a
+                  futur<span class="sr-only"
+                    >Ouvre une nouvelle fenêtre</span
+                  ></a
                 >
               </div>
             </div>
@@ -1570,12 +2314,19 @@
             <div>
               <a
                 href="https://www.bpi.fr/revivez-la-rencontre-sur-la-philosophie-et-les-enfants/"
-                >Revivez la rencontre sur la philosophie et les enfants</a
+                target="_blank"
+                >Revivez la rencontre sur la philosophie et les enfants<span
+                  class="sr-only"
+                  >Ouvre une nouvelle fenêtre</span
+                ></a
               >
               <div class="pt-3">
                 <a
                   href="https://www.bpi.fr/content/uploads/sites/2/2020/09/bal01-accessible.pdf#page=18"
-                  >Philosopher, un jeu d’enfant</a
+                  target="_blank"
+                  >Philosopher, un jeu d’enfant (PDF)<span class="sr-only"
+                    >Ouvre une nouvelle fenêtre</span
+                  ></a
                 >
               </div>
             </div>
@@ -1588,8 +2339,10 @@
             />
             <a
               href="http://www.educ-revues.fr/DIOTIME/AffichageDocument.aspx?iddoc=113658&fbclid=IwAR01jjVV1wReH_4HMxP_60WgyI6WkJXptyv2hReQO86UThF1_B4HBYnyIqg"
+              target="_blank"
               >Les ateliers philo et création "philomoos" au Centre Pompidou
-            </a>
+              <span class="sr-only">Ouvre une nouvelle fenêtre</span></a
+            >
           </div>
           <div class="text-sm flex items-center w-full py-4">
             <img
@@ -1597,8 +2350,13 @@
               alt="Logo rond rouge ouest france"
               class="w-16 pr-3 h-auto"
             />
-            <a href="assets/img/elements/presse/ouest-france-article.jpg"
-              >Les enfants préparent Halloween avec Philosophie</a
+            <a
+              href="assets/img/elements/presse/ouest-france-article.jpg"
+              target="_blank"
+              >Les enfants préparent Halloween avec Philosophie<span
+                class="sr-only"
+                >Ouvre une nouvelle fenêtre</span
+              ></a
             >
           </div>
           <div class="text-sm flex items-center w-full py-4">
@@ -1607,8 +2365,12 @@
               alt="Logo orange et rond"
               class="w-16 pr-3 h-auto"
             />
-            <a href="assets/img/elements/presse/le-matin-dimanche.pdf"
-              >Fêter Noël... quand même</a
+            <a
+              href="assets/img/elements/presse/le-matin-dimanche.pdf"
+              target="_blank"
+              >Fêter Noël... quand même<span class="sr-only"
+                >Ouvre une nouvelle fenêtre</span
+              ></a
             >
           </div>
         </div>
@@ -1616,53 +2378,67 @@
     </section>
     <!--Contact-->
     <section id="contact">
-      <div class="shadow w-10/12 mx-auto mb-6">
+      <div class="shadow w-10/12 mx-auto mb-6 lg:w-2/3">
         <div class="flex flex-wrap justify-center py-6">
           <div>
-            <h2 class="font-thin text-center tracking-widest mt-6">CONTACT</h2>
+            <h2 class="font-thin text-center tracking-widest mt-6 lg:text-2xl">
+              CONTACT
+            </h2>
             <hr class="hr-style mx-auto my-3 w-16" />
           </div>
         </div>
         <div class="text-center">
-          <p class="tracking-wider w-4/5 text-sm mx-auto">
+          <p class="tracking-wider w-4/5 text-sm mx-auto lg:text-base">
             Vous êtes intéressé·e·s par nos ateliers et souhaitez en organiser
             au sein de votre institution (médiathèque, bibliothèque, musées,
             centre d’art, mjc, école, collège et lycée...).
           </p>
           <p
-            class="uppercase text-center contact-link mx-auto w-4/5 text-sm tracking-wider py-3"
+            class="uppercase text-center contact-link mx-auto w-4/5 text-sm lg:text-base tracking-wider py-3"
           >
-            [ Contactez nous via ce formulaire ! ]
+            [ Contactez nous via ce formulaire &darr;]
           </p>
           <form>
-            <input
-              type="email"
-              class="border-solid border w-4/5 rounded px-3 py-2 my-2"
-              placeholder="Email"
-            />
-            <input
-              type="email"
-              class="border-solid border w-4/5 rounded px-3 py-2 my-2"
-              placeholder="Sujet"
-            />
-            <textarea
-              name="message"
-              class="border-solid border w-4/5 rounded px-3 py-2 my-2"
-              cols="30"
-              rows="10"
-              placeholder="En quoi pouvons-nous vous aider ?"
-            ></textarea>
+            <div>
+              <label for="email" class="sr-only">Email</label>
+              <input
+                id="email"
+                type="email"
+                class="border-solid border w-4/5 rounded px-3 py-2 my-2"
+                placeholder="Email"
+              />
+            </div>
+            <div>
+              <label for="sujet" class="sr-only">Sujet</label>
+              <input
+                id="sujet"
+                type="text"
+                class="border-solid border w-4/5 rounded px-3 py-2 my-2"
+                placeholder="Sujet"
+              />
+            </div>
+            <div>
+              <label for="message" class="sr-only">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="border-solid border w-4/5 rounded px-3 py-2 my-2"
+                cols="30"
+                rows="10"
+                placeholder="En quoi pouvons-nous vous aider ?"
+              ></textarea>
+            </div>
             <button
-              class="px-3 py-2 rounded w-4/5 mt-4 mb-3 border-solid border uppercase"
+              class="px-3 py-2 rounded w-4/5 mt-4 mb-3 border-solid border uppercase hover:bg-gray-200"
             >
               Envoyer !
             </button>
           </form>
-          <div class="flex justify-center my-3">
-            <div class="vl h-12 mx-auto"></div>
+          <div class="flex justify-center my-3 lg:my-6">
+            <div class="vl h-12 mx-auto lg:h-20"></div>
           </div>
           <p
-            class="uppercase tracking-wider w-4/5 text-sm mx-auto contact-link"
+            class="uppercase tracking-wider w-4/5 text-sm mx-auto contact-link lg:text-base"
           >
             [ ou par e-mail ]
           </p>
@@ -1678,45 +2454,54 @@
       </div>
     </section>
     <footer>
-      <div class="flex flex-col mx-2 justify-evenly items-center">
-        <div class="w-3/5 mt-6">
-          <img
-            class="object-fill"
-            src="assets/img/elements/logo-philomoos-blanc.png"
-            alt="Logo typographique de Philomoos avec une typographie de type origam"
-          />
-        </div>
+      <div class="lg:flex justify-center">
+        <div
+          class="flex flex-col mx-2 items-center lg:items-end lg:w-1/4 lg:pt-12 lg:mr-32"
+        >
+          <div class="w-2/5 mt-6 lg:mt-2">
+            <img
+              class="object-fill"
+              src="assets/img/elements/logo-philomoos-blanc.png"
+              alt="Logo typographique de Philomoos avec une typographie de type origam"
+            />
+          </div>
 
-        <div class="socials py-6">
-          <a
-            title="Lien vers facebook de Philomoos"
-            href="https://fr-fr.facebook.com/philomoos/"
-            ><i class="fa fa-facebook mx-1"></i
-          ></a>
-          <a
-            title="Lien vers instagram de Philomoos"
-            href="https://www.instagram.com/philomoos/"
-            ><i class="fa fa-instagram mx-1"></i
-          ></a>
-          <a title="Lien vers pinterest de Philomoos" href=""
-            ><i class="fa fa-pinterest-p mx-1"></i
-          ></a>
+          <div class="socials py-6 lg:text-right">
+            <a
+              title="Lien vers facebook de Philomoos"
+              href="https://fr-fr.facebook.com/philomoos/"
+              ><i class="fa fa-facebook mx-1"></i
+            ></a>
+            <a
+              title="Lien vers instagram de Philomoos"
+              href="https://www.instagram.com/philomoos/"
+              ><i class="fa fa-instagram mx-1"></i
+            ></a>
+            <a title="Lien vers pinterest de Philomoos" href=""
+              ><i class="fa fa-pinterest-p mx-1"></i
+            ></a>
+          </div>
         </div>
-        <ul class="text-sm px-5">
-          <li>
-            Design : &copy; copyright Thomas Paton contact :
-            thomaspaton90@gmail.com
-          </li>
-          <li>Illustration : &copy; copyright Luis Gadea</li>
-          <li>Textes : Fanny Bourrillon</li>
-          <li>
-            Photographies &copy; copyright : Angie Gadea, Tyffany Wan, Catherine
-            Delahaye
-          </li>
-          <li>Intégration Web : <a href="https://clic2000.fr">Clic2000</a></li>
-        </ul>
-        <div class="py-6">
-          <a href="#">[ MENTIONS LÉGALES ]</a>
+        <div class="lg:pt-12">
+          <ul class="text-sm px-5">
+            <li>
+              Design : &copy; copyright Thomas Paton contact :
+              thomaspaton90@gmail.com
+            </li>
+            <li>Illustration : &copy; copyright Luis Gadea</li>
+            <li>Textes : Fanny Bourrillon</li>
+            <li>
+              Photographies &copy; copyright : Angie Gadea, Tyffany Wan,
+              Catherine Delahaye
+            </li>
+            <li>
+              Intégration Web et hébergement :
+              <a href="https://clic2000.fr">Clic2000</a>
+            </li>
+          </ul>
+          <div class="py-6 px-5">
+            <a href="#">[ MENTIONS LÉGALES ]</a>
+          </div>
         </div>
       </div>
     </footer>
