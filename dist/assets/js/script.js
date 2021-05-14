@@ -40,11 +40,22 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//Responsive javascript
+var x = window.matchMedia("(min-width: 1024px)");
+
 //Slideshow logic
 function showSlides(n) {
+  var slides;
   var i;
-  var slides = document.getElementsByClassName("my-slides");
-  var dots = document.getElementsByClassName("dot");
+  var dots;
+  var x = window.matchMedia("(min-width: 1024px)");
+  if (x.matches) {
+      slides = document.getElementsByClassName("my-slides-desktop");
+      dots = document.getElementsByClassName("dot-desktop");
+  } else {
+      slides = document.getElementsByClassName("my-slides");
+      dots = document.getElementsByClassName("dot");
+  }
   if (n==undefined) {n = ++slideIndex}
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}

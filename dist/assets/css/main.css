@@ -381,7 +381,7 @@ p,a,figcaption,h2,h3,h4 {
 
 /* Carrousel */
 /* The dots/bullets/indicators */
-.dot {
+.dot, .dot-desktop {
   cursor: pointer;
   height: 5px;
   width: 5px;
@@ -393,7 +393,7 @@ p,a,figcaption,h2,h3,h4 {
   transition: background-color 0.6s ease;
 }
 
-.activeSlide, .dot:hover {
+.activeSlide, .dot:hover, .dot:focus, .dot-desktop:hover, .dot-desktop:focus {
   background-color: white;
   margin: 2px;
   height: 8px;
