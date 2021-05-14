@@ -4,7 +4,7 @@
   "description": "Philomoos landing page",
   "main": "index.html",
   "scripts": {
-    "build": "postcss src/assets/css/tailwind.css -o dist/assets/css/style.css"
+    "build": "postcss src/assets/css/tailwind.css -o assets/css/style.css"
   },
   "keywords": [],
   "author": "Clic2000",
