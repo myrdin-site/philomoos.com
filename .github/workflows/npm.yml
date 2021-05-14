@@ -1,0 +1,32 @@
+name: Install dependencies & deploy
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: dev
+            fetch-depth: 0
+            submodules: true
+            persist-credentials: false
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile CSS
+	run: npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          BRANCH: gh-pages
+          FOLDER: .
+          SILENT: true
