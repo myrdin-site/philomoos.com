@@ -269,18 +269,6 @@
        url('../fonts/Montserrat/montserrat-v15-latin-900italic.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
  
-/* forkawesome */
-@font-face {
-  font-family: 'ForkAwesome';
-  src: url('../fonts/Fork-Awesome-1.1.7/forkawesome-webfont.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/Fork-Awesome-1.1.7/forkawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Fork-Awesome-1.1.7/forkawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Fork-Awesome-1.1.7/forkawesome-webfont.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/Fork-Awesome-1.1.7/forkawesome-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Fork-Awesome-1.1.7/forkawesome-webfont.svg#ForkAwesome') format('svg'); /* Legacy iOS */
-}
- 
 * {
     font-family: "Montserrat";
 }
