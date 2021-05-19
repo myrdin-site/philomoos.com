@@ -2056,12 +2056,16 @@
           >
             [ ou via ce formulaire &darr;]
           </p>
-          <form>
+          <form
+	    action="https://formspree.io/f/xjvjyjav"
+	    method="POST"
+	  >
             <div>
               <label for="email" class="sr-only">Email</label>
               <input
                 id="email"
                 type="email"
+		name="_replyto"
                 class="border-solid border w-4/5 rounded px-3 py-2 my-2"
                 placeholder="Email"
               />
@@ -2071,6 +2075,7 @@
               <input
                 id="sujet"
                 type="text"
+		name="sujet"
                 class="border-solid border w-4/5 rounded px-3 py-2 my-2"
                 placeholder="Sujet"
               />
@@ -2086,7 +2091,7 @@
                 placeholder="En quoi pouvons-nous vous aider ?"
               ></textarea>
             </div>
-            <button class="px-3 py-2 rounded w-4/5 mt-4 mb-3 border-solid border uppercase hover:bg-gray-200">
+            <button type="submit" class="px-3 py-2 rounded w-4/5 mt-4 mb-3 border-solid border uppercase hover:bg-gray-200">
               Envoyer !
             </button>
           </form>
