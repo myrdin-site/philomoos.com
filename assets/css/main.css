@@ -325,6 +325,24 @@ p,a,figcaption,h2,h3,h4 {
     color: #484846;
 }
 
+/* Skip links */
+
+.skip-link {
+    font-weight: 500;
+    left: 2%;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+    border: 1px solid black;
+  }
+
+  .skip-link:focus {
+    transform: translateY(400%);
+  }
+
+  .skip-link:focus-within {
+    transform: translateY(400%);
+  }
 
 /* Active menu */
 
