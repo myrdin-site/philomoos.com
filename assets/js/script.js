@@ -75,7 +75,6 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " activeSlide";
 }
 
-timer = setTimeout(showSlides, 5000);
 
 // Keyboard Navigation
 document.addEventListener("keydown", function (e) {
@@ -94,16 +93,16 @@ var play = document.querySelector(".play");
 var pause = document.querySelector(".pause");
 var btnplaypause = document.querySelector(".slides-playpause");
 
-play.style.display = "none";
+play.style.display = "block";
 
 btnplaypause.addEventListener("click", function () {
-  if (play.style.display === "none") {
-    play.style.display = "block";
-    pause.style.display = "none";
-    clearTimeout(showSlides);
-  } else {
-    pause.style.display = "block";
+  if (play.style.display === "block") {
     play.style.display = "none";
-    setTimeout(showSlides, 5000);
+    pause.style.display = "block";
+    timer = setInterval(showSlides, 5000);
+  } else {
+    pause.style.display = "none";
+    play.style.display = "block";
+    clearInterval(timer);
   }
 });
