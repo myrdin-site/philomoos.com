@@ -75,7 +75,6 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " activeSlide";
 }
 
-
 // Keyboard Navigation
 document.addEventListener("keydown", function (e) {
   const keyCode = e.keyCode ? e.keyCode : e.which;
