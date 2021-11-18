@@ -88,10 +88,12 @@ var play = document.querySelector('.play');
 var pause = document.querySelector('.pause');
 var btnplaypause = document.querySelector('.slides-playpause');
 
+play.style.display = "none";
+
 btnplaypause.addEventListener('click',(function(){
     if (play.style.display === "none") {
-        pause.style.display = "none"; 
         play.style.display = "block";
+        pause.style.display = "none"; 
     } else {
         pause.style.display = "block";
         play.style.display = "none";
