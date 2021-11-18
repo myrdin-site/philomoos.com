@@ -436,6 +436,25 @@ p,a,figcaption,h2,h3,h4 {
     color: #B5B5B5;
 }
 
+/* Play/Pause */
+
+.slides-playpause {
+  padding: 0.8rem;
+  background-color: white;
+}
+.slides-playpause>svg {
+    fill: #B5B5B5;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.slides-playpause>.play,
+  .playpause.paused .pause {
+    display: none;	
+  }
+.slide-playpause>.playpause.paused .play {
+    display: block;	
+  }
+
 /* Fading animation */
 
 .fade {
