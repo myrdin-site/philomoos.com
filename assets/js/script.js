@@ -69,6 +69,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " activeSlide";
   
   timer = setTimeout(showSlides, 5000);
-
 }
+
+// Keyboard Navigation
+document.addEventListener('keydown', (function(e) {
+    const keyCode = e.keyCode ? e.keyCode : e.which
+  
+    if (keyCode === 39) {
+        plusSlides(1)
+    } else if (keyCode === 37) {
+        plusSlides(-1)
+    }
+ }))
 
