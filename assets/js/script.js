@@ -82,3 +82,19 @@ document.addEventListener('keydown', (function(e) {
     }
  }))
 
+ // Play/Pause
+
+var play = document.querySelector('.play');
+var pause = document.querySelector('.pause');
+var btnplaypause = document.querySelector('.slides-playpause');
+
+btnplaypause.addEventListener('click',(function(){
+    if (play.style.display === "none") {
+        pause.style.display = "none"; 
+        play.style.display = "block";
+    } else {
+        pause.style.display = "block";
+        play.style.display = "none";
+    }
+}
+))

@@ -447,11 +447,10 @@ p,a,figcaption,h2,h3,h4 {
     width: 0.8rem;
     height: 0.8rem;
 }
-.slides-playpause>.play,
-  .playpause.paused .pause {
+.play {
     display: none;	
   }
-.slide-playpause>.playpause.paused .play {
+.pause {
     display: block;	
   }
 
