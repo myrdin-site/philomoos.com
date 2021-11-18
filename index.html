@@ -479,22 +479,32 @@
           </div>
 
           <!-- Next and previous buttons -->
-          <a class="prev cursor-pointer absolute top-2/4 ml-1" tabindex="0" onclick="plusSlides(-1)"
+          <a
+            class="prev cursor-pointer absolute top-2/4 ml-1"
+            tabindex="0"
+            aria-controls="slidesitems"
+            aria-label="Prochain Slide"
+            onclick="plusSlides(-1)"
             ><img
               src="assets/img/elements/fleche-gauche.png"
-              alt="fleche grise en direction de la gauche"
+              alt="Grey arrow pointing left"
               class="h-4 lg:h-12"
           /></a>
-          <a class="next cursor-pointer absolute top-2/4 right-0 mr-1" tabindex="0" onclick="plusSlides(1)"
+          <a
+            class="next cursor-pointer absolute top-2/4 right-0 mr-1"
+            tabindex="0"
+            aria-controls="slidesitems"
+            aria-label="Slide précédent"
+            onclick="plusSlides(1)"
             ><img
               src="assets/img/elements/fleche-droite.png"
-              alt="fleche grise en direction de la droite"
+              alt="Grey arrow pointing right"
               class="h-4 lg:h-12"
           /></a>
         </div>
         <div class="flex justify-center items-center my-4">
           <!--Play/Pause Button-->
-          <button class="slides-playpause" aria-controls="slides-items" aria-label="Stop Carousel">
+          <button class="slides-playpause" aria-controls="slideitems" aria-label="Stop Carousel">
             <svg
               class="playpause"
               version="1.1"

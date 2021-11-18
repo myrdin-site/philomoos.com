@@ -288,7 +288,7 @@
       </div>
       <!-- Slideshow container desktop-->
       <div class="hidden lg:block">
-        <div class="slideshow mx-auto max-w-screen-lg mt-8 relative">
+        <div id="slideitems" class="slideshow mx-auto max-w-screen-lg mt-8 relative">
           <!-- Full-width images  -->
           <div class="my-slides-desktop mx-5 aspect-w-16 aspect-h-7 lg:mx-16">
             <img
@@ -443,13 +443,23 @@
           </div>
 
           <!-- Next and previous buttons -->
-          <a class="prev cursor-pointer absolute top-2/4 ml-1" tabindex="0" onclick="plusSlides(-1)"
+          <a
+            class="prev cursor-pointer absolute top-2/4 ml-1"
+            tabindex="0"
+            aria-controls="slidesitems"
+            aria-label="Previous Slide"
+            onclick="plusSlides(-1)"
             ><img
               src="assets/img/elements/fleche-gauche.png"
               alt="Grey arrow pointing left"
               class="h-4 lg:h-12"
           /></a>
-          <a class="next cursor-pointer absolute top-2/4 right-0 mr-1" tabindex="0" onclick="plusSlides(1)"
+          <a
+            class="next cursor-pointer absolute top-2/4 right-0 mr-1"
+            tabindex="0"
+            aria-controls="slidesitems"
+            aria-label="Next Slide"
+            onclick="plusSlides(1)"
             ><img
               src="assets/img/elements/fleche-droite.png"
               alt="Grey arrow pointing right"
@@ -458,7 +468,7 @@
         </div>
         <div class="flex justify-center items-center my-4">
           <!--Play/Pause Button-->
-          <button class="slides-playpause" aria-controls="slides-items" aria-label="Stop Carousel">
+          <button class="slides-playpause" aria-controls="slideitems" aria-label="Stop Carousel">
             <svg
               class="playpause"
               version="1.1"
@@ -1794,9 +1804,9 @@
         <div class="vl h-12 mx-auto lg:h-20"></div>
         <div class="px-5 py-6 lg:py-12">
           <p class="text-sm">
-            The students in DNMADE (diploma in crafts and design) from the Gobelins School in Paris
-            are involved in the supervision of the Philomoos workshops! As part of a first-year project, they
-            work on the Philomoos TV channel :
+            The students in DNMADE (diploma in crafts and design) from the Gobelins School in Paris are
+            involved in the supervision of the Philomoos workshops! As part of a first-year project, they work
+            on the Philomoos TV channel :
           </p>
           <div class="py-6 lg:flex lg:justify-center">
             <div class="lg:w-1/2">
