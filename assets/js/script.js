@@ -67,9 +67,9 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " activeSlide";
-  
-  timer = setTimeout(showSlides, 5000);
 }
+
+timer = setTimeout(showSlides, 5000);
 
 // Keyboard Navigation
 document.addEventListener('keydown', (function(e) {
@@ -94,9 +94,11 @@ btnplaypause.addEventListener('click',(function(){
     if (play.style.display === "none") {
         play.style.display = "block";
         pause.style.display = "none"; 
+        clearTimeout(showSlides);
     } else {
         pause.style.display = "block";
         play.style.display = "none";
+        setTimeout(showSlides, 5000);
     }
 }
 ))
