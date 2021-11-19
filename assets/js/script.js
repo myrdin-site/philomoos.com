@@ -7,6 +7,7 @@ let links = document.getElementsByClassName("link");
 // Toggle menu
 hamburger.addEventListener("click", function () {
   mobileMenu.classList.toggle("active");
+  hamburger.setAttribute('aria-expanded', 'true');
 });
 
 for (var j = 0; j < links.length; j++) {
