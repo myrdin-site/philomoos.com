@@ -3,7 +3,7 @@ name: Install dependencies & deploy
 on:
   push:
     branches:
-      - production
+      - dev
 
 jobs:
   build_css:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout source Git branch
         uses: actions/checkout@v2
         with:
-            ref: production
+            ref: dev
             fetch-depth: 0
             submodules: true
             persist-credentials: false
