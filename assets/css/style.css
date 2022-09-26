@@ -601,12 +601,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden {
   display: none;
 }
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-.aspect-video {
-  aspect-ratio: 16 / 9;
-}
 .h-12 {
   height: 3rem;
 }
@@ -719,6 +713,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   -moz-columns: 3;
        columns: 3;
 }
+.break-inside-avoid-column {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid-column;
+}
 .flex-row {
   flex-direction: row;
 }
@@ -794,11 +792,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   -o-object-fit: fill;
      object-fit: fill;
 }
-.p-4 {
-  padding: 1rem;
-}
 .p-2 {
   padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-5 {
   padding-left: 1.25rem;
