@@ -709,10 +709,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .list-disc {
   list-style-type: disc;
 }
-.columns-3 {
-  -moz-columns: 3;
-       columns: 3;
-}
 .break-inside-avoid-column {
   -moz-column-break-inside: avoid;
        break-inside: avoid-column;
@@ -928,6 +924,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-2\/4 {
     width: 50%;
+  }
+
+  .md\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
   }
 }
 @media (min-width: 1024px) {
