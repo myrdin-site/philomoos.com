@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -709,6 +709,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .list-disc {
   list-style-type: disc;
 }
+.break-inside-avoid-column {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid-column;
+}
 .flex-row {
   flex-direction: row;
 }
@@ -732,6 +736,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-evenly {
   justify-content: space-evenly;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -781,11 +788,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   -o-object-fit: fill;
      object-fit: fill;
 }
-.p-4 {
-  padding: 1rem;
-}
 .p-2 {
   padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -917,6 +924,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-2\/4 {
     width: 50%;
+  }
+
+  .md\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
   }
 }
 @media (min-width: 1024px) {
