@@ -893,6 +893,9 @@ video {
 .pb-20 {
   padding-bottom: 5rem;
 }
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
 .pr-3 {
   padding-right: 0.75rem;
 }
@@ -928,6 +931,9 @@ video {
 }
 .font-thin {
   font-weight: 100;
+}
+.font-bold {
+  font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1029,6 +1035,16 @@ video {
   .lg\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+
+  .lg\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .lg\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .lg\:mt-12 {
