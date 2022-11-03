@@ -851,6 +851,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-20 {
   padding-bottom: 5rem;
 }
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
 .pr-3 {
   padding-right: 0.75rem;
 }
@@ -886,6 +889,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-thin {
   font-weight: 100;
+}
+.font-bold {
+  font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
