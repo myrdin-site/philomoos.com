@@ -351,6 +351,7 @@ h4 {
   position: absolute;
   transform: translateY(-100%);
   border: 1px solid black;
+  z-index: 9;
 }
 
 .skip-link:focus {
@@ -363,12 +364,8 @@ h4 {
 
 /* Active menu */
 
-.drop {
-  transition: max-height 1s;
-}
-
 .active {
-  max-height: 550px;
+  display: block;
 }
 
 /* First Section (Accueil) */

@@ -12,10 +12,19 @@ hamburger.addEventListener("click", function () {
 
 for (var j = 0; j < links.length; j++) {
   links[j].addEventListener("click", function () {
-    console.log(links[j]);
     mobileMenu.classList.toggle("active");
   });
-}
+};
+
+// Close with escape
+document.addEventListener("keydown", function (e) {
+  const keyCode = e.keyCode ? e.keyCode : e.which;
+
+  if (keyCode === 27 && mobileMenu.classList.contains("active")) {
+    mobileMenu.classList.toggle("active");
+    hamburger.focus();
+  }
+});
 
 //Space for anchor links
 function addMargin() {

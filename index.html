@@ -79,7 +79,7 @@
 
   <body>
     <!--Skip links-->
-    <div class="skip-link">
+    <div class="skip-link bg-white">
       Aller au <a href="#accueil">contenu</a> ou au
       <a href="#footer">pied de page</a>
     </div>
@@ -100,7 +100,7 @@
           />
         </div>
         <!--Hamburger-->
-        <div
+        <button
           id="hamburger"
           class="cursor-pointer lg:hidden"
           tabindex="0"
@@ -110,21 +110,20 @@
           aria-label="menu"
           role="button"
         >
-          <svg viewBox="0 0 100 70" width="28" height="30">
+          <svg aria-hidden="true" viewBox="0 0 100 70" width="28" height="30">
             <title>Hamburger button</title>
-            <desc>3 blue lines making an hamburger button.</desc>
             <rect width="90" height="5" fill="#214130"></rect>
             <rect y="30" width="90" height="5" fill="#214130"></rect>
             <rect y="60" width="90" height="5" fill="#214130"></rect>
           </svg>
-        </div>
+        </button>
       </div>
 
       <!--Nav items-->
       <div class="pl-12">
         <ul
-          class="space-y-8 lg:space-y-0 drop block overflow-hidden max-h-0 lg:max-h-full lg:flex lg:overflow-visible lg:space-x-12 lg:items-center lg:my-8 lg:text-xs"
-          id="menu-mobile"
+          class="space-y-8 lg:space-y-0 drop hidden overflow-hidden lg:max-h-full lg:flex lg:overflow-visible lg:space-x-12 lg:items-center lg:my-8 lg:text-xs"
+          id="menu-mobile" 
         >
           <li>
             <a href="#accueil" class="color-accueil tracking-widest link"
