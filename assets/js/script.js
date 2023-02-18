@@ -92,6 +92,7 @@ document.addEventListener("keydown", function (e) {
 var play = document.querySelector(".play");
 var pause = document.querySelector(".pause");
 var btnplaypause = document.querySelector(".slides-playpause");
+var carouselSlides = document.querySelector(".carousel-items");
 
 play.style.display = "block";
 
