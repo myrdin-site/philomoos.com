@@ -1062,6 +1062,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0.5rem;
   }
 
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1144,6 +1148,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-32 {
+    width: 8rem;
   }
 
   .lg\:flex-row {
