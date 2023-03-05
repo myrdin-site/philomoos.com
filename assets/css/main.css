@@ -296,7 +296,10 @@
 * {
   font-family: "Montserrat";
 }
-
+body {
+  background-color: #FFF;
+  color: #595959;
+}
 p,
 a,
 figcaption,
