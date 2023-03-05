@@ -1,3 +1,9 @@
+//Responsive javascript
+var x = window.matchMedia("(min-width: 1024px)");
+const mediaQuery = window.matchMedia("(max-width: 1024px)");
+
+console.log("linked");
+
 // Navigation on mobile
 
 let hamburger = document.querySelector("#hamburger");
@@ -7,14 +13,16 @@ let links = document.getElementsByClassName("link");
 // Toggle menu
 hamburger.addEventListener("click", function () {
   mobileMenu.classList.toggle("active");
-  hamburger.setAttribute('aria-expanded', 'true');
+  hamburger.setAttribute("aria-expanded", "true");
 });
 
-for (var j = 0; j < links.length; j++) {
-  links[j].addEventListener("click", function () {
-    mobileMenu.classList.toggle("active");
-  });
-};
+if (mediaQuery.matches) {
+  for (var j = 0; j < links.length; j++) {
+    links[j].addEventListener("click", function () {
+      mobileMenu.classList.toggle("active");
+    });
+  }
+}
 
 // Close with escape
 document.addEventListener("keydown", function (e) {
@@ -49,9 +57,6 @@ function currentSlide(n) {
   clearTimeout(timer);
   showSlides((slideIndex = n));
 }
-
-//Responsive javascript
-var x = window.matchMedia("(min-width: 1024px)");
 
 //Slideshow logic
 function showSlides(n) {
