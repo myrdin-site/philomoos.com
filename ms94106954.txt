@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Fichier de vérification de la propriété du domaine pour Microsoft 365 : placer dans la racine du site web",
+  "Domain": "philomoos.com",
+  "Id": "809597f8-3a63-4535-b253-9803951a1dba"
+}
