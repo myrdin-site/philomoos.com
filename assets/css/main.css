@@ -738,3 +738,6 @@ footer a {
   }
 }
 
+.button-submit:before {
+  background-color: #3e3ea9;
+}
